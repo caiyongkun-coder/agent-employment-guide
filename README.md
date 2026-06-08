@@ -7,9 +7,9 @@
 
 Agent Employment Guide / agent就业指南 is a bilingual, machine-readable progress and lessons repository for one ongoing experiment:
 
-Can the user's own agent sessions earn verified net revenue of at least 100 RMB, or the equivalent in USD?
+Can the user's own Codex sessions earn verified net revenue of at least 100 RMB, or the equivalent in USD?
 
-The current answer is still: not yet.
+The experiment started on 2026-06-05. The current answer is still: not yet.
 
 ## Status
 
@@ -22,22 +22,22 @@ The current answer is still: not yet.
 | Orders | 0 |
 | Real buyer inquiries | 0 |
 | Source ledger | `PRIVATE_MONEY_GOAL_WORKSPACE\revenue_ledger.csv` |
-| Best current lead | PeoplePerHour PowerPoint/template jobs, proposal attempt not yet confirmed |
+| Current strongest route | an earlier marketplace candidate only if the user explicitly confirms a write/account action |
 
 Only verified net revenue counts. Views, favorites, posts, proposal drafts, prepared assets, platform setup, tips, donations, support payments, and inquiries without order/payment do not count.
 
 ## What This Is
 
-This is not an open multi-agent relay. The money-making work is done by the owner's own agent sessions. "Handoff" means continuation between the owner's own conversations when context gets long.
+This is not an open multi-agent relay. The money-making work is done by the owner's own Codex sessions. "Handoff" means continuation between the owner's own conversations when context gets long.
 
-Other humans and agents are spectators and learners by default. If they want to run a similar experiment with their own agent, they can reuse the lessons here to avoid repeated mistakes.
+Other humans and agents are spectators and learners by default. They may reuse the lessons here for their own separate experiments, but they do not participate in the owner's personal 100 RMB goal.
 
 ## Quick Start
 
 For humans:
 
 1. Read [PROGRESS.md](PROGRESS.md) or [PROGRESS.zh-CN.md](PROGRESS.zh-CN.md).
-2. Check the scoreboard: verified revenue, whether it broke zero, and latest meaningful progress.
+2. Check the scoreboard: verified revenue, broke-zero status, and latest meaningful progress.
 3. Treat this as a watch page, not a strategy approval queue.
 
 For agents:
@@ -52,36 +52,6 @@ For support/tips:
 1. Read [SUPPORT.md](SUPPORT.md).
 2. Use the public QR assets under [assets/support](assets/support).
 3. Do not count support payments toward the 100 RMB experiment.
-
-## Skill Compatibility
-
-This repository is designed for agents that understand the open `SKILL.md` / AgentSkills-style format.
-
-Supported usage patterns:
-
-- Direct read: open [SKILL.md](SKILL.md).
-- Codex / Claude Code / Cursor style: install or copy the repository folder as a skill folder containing `SKILL.md`.
-- OpenClaw style: copy or clone this repository into a skills root such as `~/.openclaw/skills/agent-employment-guide/`.
-- Hermes style: install the direct `SKILL.md` URL, or use the tap-compatible copy at [skills/agent-employment-guide/SKILL.md](skills/agent-employment-guide/SKILL.md).
-- Any other agent: read [AGENTS.md](AGENTS.md), then [SKILL.md](SKILL.md), then [agent_context.json](agent_context.json).
-
-There are no helper scripts in the first version. Agents should read the repository files directly.
-
-## Repository Layout
-
-| Path | Purpose |
-| --- | --- |
-| `SKILL.md` | Root AgentSkills-compatible skill. |
-| `skills/agent-employment-guide/SKILL.md` | Tap-compatible copy for agents that scan `skills/<name>/SKILL.md`. |
-| `AGENTS.md` | Generic instructions for any agent reading this repository. |
-| `agent_context.json` | Machine-readable status, lessons, boundaries, and policy. |
-| `PROGRESS.md` | English progress/watch page. |
-| `PROGRESS.zh-CN.md` | Chinese progress/watch page. |
-| `README.md` | English repository entrance. |
-| `README.zh-CN.md` | Chinese repository entrance. |
-| `SUPPORT.md` | Support/tip options and privacy rules. |
-| `assets/support/` | Public support QR code assets. |
-| `LICENSE` | Apache License 2.0. |
 
 ## Human Role
 
@@ -103,9 +73,25 @@ Useful lessons so far:
 
 - Exposure is not revenue.
 - Passive listings can produce views without buyer conversations.
-- Paid bid gates, identity gates, and CAPTCHA gates can block otherwise promising marketplace tasks.
+- Paid bid gates, identity gates, CAPTCHA gates, and platform account rules can block otherwise promising marketplace tasks.
 - Prepared samples help conversion but do not count as income.
 - Fresh buyer-initiated demand is more valuable than repeatedly refreshing old surfaces.
+- Any write action on a marketplace or social platform needs explicit user confirmation at action time.
+
+## Repository Layout
+
+| Path | Purpose |
+| --- | --- |
+| `SKILL.md` | Root AgentSkills-compatible skill. |
+| `AGENTS.md` | Generic instructions for any agent reading this repository. |
+| `agent_context.json` | Machine-readable status, lessons, boundaries, and policy. |
+| `PROGRESS.md` | English progress/watch page. |
+| `PROGRESS.zh-CN.md` | Chinese progress/watch page. |
+| `README.md` | English repository entrance. |
+| `README.zh-CN.md` | Chinese repository entrance. |
+| `SUPPORT.md` | Support/tip options and privacy rules. |
+| `assets/support/` | Public support QR code assets. |
+| `LICENSE` | Apache License 2.0. |
 
 ## Support
 
@@ -126,8 +112,11 @@ Important source files:
 
 - `LATEST_GOAL_HANDOFF.md`
 - `revenue_ledger.csv`
+- `action_log.md`
+- `pivot_decision_log.csv`
+- `xianyu_72h_metrics.csv`
+- `warm_outreach_metrics.csv`
 - `next_heartbeat_minimal_runbook.md`
-- `private_marketplace_candidate_pack.md`
 
 The public repository should stay compact: top-level status, meaningful progress, current bottlenecks, lessons learned, support boundaries, and next safe plan.
 
