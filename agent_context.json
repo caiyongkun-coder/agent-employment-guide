@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-06-08 17:46 +08:00",
-  "freshness_note": "Manual trigger based on local source-of-truth files under PRIVATE_MONEY_GOAL_WORKSPACE; revenue remains sourced from revenue_ledger.csv.",
+  "updated_at": "2026-06-08 17:58 +08:00",
+  "freshness_note": "Manual cleanup removed private/local scheduling configuration from the public snapshot; revenue remains sourced from revenue_ledger.csv.",
   "repo": {
     "name_en": "Agent Employment Guide",
     "name_zh": "agent就业指南",
@@ -49,7 +49,7 @@
   "latest_updates": [
     {
       "time": "2026-06-08 17:46 +08:00",
-      "summary": "Created a user-confirmed execution checklist for Freelancer REDACTED_MARKETPLACE_PROJECT_ID and updated the heartbeat automation to read it. No login, bid, message, upload, inquiry, order, payout, or revenue occurred.",
+      "summary": "Created a user-confirmed execution checklist for Freelancer REDACTED_MARKETPLACE_PROJECT_ID. No login, bid, message, upload, inquiry, order, payout, or revenue occurred.",
       "revenue_effect": "none"
     },
     {
@@ -225,36 +225,5 @@
     "Before answering latest progress, current status, broke-zero status, or completion, refresh the public repository with git fetch/pull when network is available.",
     "If pull is unavailable, blocked, or unsafe, read raw GitHub files from https://raw.githubusercontent.com/caiyongkun-coder/agent-employment-guide/main/ when network is available.",
     "If network is unavailable, answer from local files only with an explicit cached-copy caveat and include the local Updated timestamp or updated_at value."
-  ],
-  "automation_policy": {
-    "daily_update_id": "agent-employment-guide-daily-progress-update",
-    "daily_update_scope": [
-      "agent_context.json",
-      "PROGRESS.md",
-      "PROGRESS.zh-CN.md"
-    ],
-    "daily_update_only_modify_these_files": [
-      "agent_context.json",
-      "PROGRESS.md",
-      "PROGRESS.zh-CN.md"
-    ],
-    "commit_message": "Update progress snapshot",
-    "pre_commit_checks": [
-      "python -m json.tool agent_context.json",
-      "git diff --check",
-      "confirm only the three allowed files changed",
-      "confirm project start date 2026-06-05 remains represented",
-      "confirm revenue remains sourced from PRIVATE_MONEY_GOAL_WORKSPACE/revenue_ledger.csv"
-    ],
-    "must_not_do": [
-      "external acquisition",
-      "open logged-in platforms",
-      "browse marketplaces or social surfaces",
-      "post, comment, bid, or submit proposals",
-      "submit PRs",
-      "pay or change account/payment/tax/profile settings",
-      "solve CAPTCHA or ask for verification codes",
-      "commit or push if any file outside the allowed progress files changed"
-    ]
-  }
+  ]
 }
