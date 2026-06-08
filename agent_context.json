@@ -1,0 +1,228 @@
+{
+  "schema_version": 2,
+  "updated_at": "2026-06-08 12:14 +08:00",
+  "repo": {
+    "name_en": "Agent Employment Guide",
+    "name_zh": "agent就业指南",
+    "slug": "agent-employment-guide",
+    "path": "LOCAL_REPOSITORY_CLONE",
+    "github_url": "https://github.com/caiyongkun-coder/agent-employment-guide",
+    "publication_status": "Public GitHub repository is intended at https://github.com/caiyongkun-coder/agent-employment-guide. Agents should prefer the latest GitHub copy when network access is available.",
+    "purpose": "Compact machine-readable progress and lessons record for the user's own long-running Codex experiment to earn verified net revenue of 100 RMB or equivalent USD.",
+    "not_this": [
+      "not an external multi-agent relay project",
+      "not a public approval workflow",
+      "not a place where humans review or approve ordinary agent strategy"
+    ]
+  },
+  "positioning": {
+    "experiment_owner": "the user",
+    "primary_executor": "the user's own Codex sessions",
+    "handoff_meaning": "continuation between the user's Codex conversations when context becomes long",
+    "other_agents_role": "spectators and learners who may reuse lessons for their own separate experiments",
+    "humans_role": "watch progress and help only at real-world account or identity gates"
+  },
+  "source_project": {
+    "workspace": "PRIVATE_CODEX_WORKSPACE",
+    "materials_dir": "PRIVATE_MONEY_GOAL_WORKSPACE",
+    "primary_handoff": "PRIVATE_MONEY_GOAL_WORKSPACE/LATEST_GOAL_HANDOFF.md",
+    "ledger": "PRIVATE_MONEY_GOAL_WORKSPACE/revenue_ledger.csv",
+    "runbook": "PRIVATE_MONEY_GOAL_WORKSPACE/next_heartbeat_minimal_runbook.md",
+    "peopleperhour_pack": "PRIVATE_MONEY_GOAL_WORKSPACE/private_marketplace_candidate_pack.md"
+  },
+  "goal_status": {
+    "goal": "Earn verified net revenue >= 100 RMB or equivalent USD.",
+    "verified_net_revenue_rmb": 0,
+    "verified_revenue": false,
+    "broke_zero": false,
+    "complete": false,
+    "orders": 0,
+    "real_buyer_inquiries": 0,
+    "source_of_truth": "revenue_ledger.csv",
+    "completion_rule": "Only verified net revenue >= 100 RMB or equivalent USD with evidence_path or explicit user confirmation completes the goal.",
+    "zero_break_rule": "Breaking zero requires confirmed net revenue > 0."
+  },
+  "latest_updates": [
+    {
+      "time": "2026-06-08 09:47 +08:00",
+      "summary": "Low-memory platform check completed across Xianyu, X/Twitter, Tieba, ZBJ, and EPWK. No real inquiry, order, payment, or revenue appeared.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 10:00 +08:00",
+      "summary": "Read-only active acquisition screen found PeoplePerHour PowerPoint/template jobs as the best visible new demand. No proposal, bid, login, message, or revenue occurred.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 10:16 +08:00",
+      "summary": "Prepared a truthful 4-slide editable demo deck for a possible PeoplePerHour proposal. It is an outreach asset only, not revenue evidence.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 10:18 +08:00",
+      "summary": "Corrected the daily automation positioning: progress files are human spectator pages, not review or approval files.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 11:50 +08:00",
+      "summary": "Opened the first lightweight read-only skill as SKILL.md for progress watching, lesson reuse, and support boundaries.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 12:14 +08:00",
+      "summary": "Renamed the public project to Agent Employment Guide / agent就业指南 and selected the GitHub slug agent-employment-guide.",
+      "revenue_effect": "none"
+    }
+  ],
+  "current_best_lead": {
+    "channel": "PeoplePerHour",
+    "type": "PowerPoint/template remote jobs",
+    "status": "read-only screened; proposal attempt not yet confirmed by user",
+    "candidate_budgets_usd": [
+      110,
+      121,
+      90,
+      100
+    ],
+    "local_assets": {
+      "sample_deck_pptx": "PRIVATE_MONEY_GOAL_WORKSPACE/private_sample_asset.pptx",
+      "sample_deck_contact_sheet": "PRIVATE_MONEY_GOAL_WORKSPACE/private_sample_contact_sheet.png"
+    },
+    "hard_boundary": "Do not submit a proposal, bid, message, registration, profile/contact update, or portfolio/contact details unless the user explicitly confirms the PeoplePerHour attempt."
+  },
+  "attention_budget_next_agent_percent": {
+    "fresh_buyer_initiated_acquisition_or_peopleperhour_if_user_confirms": 45,
+    "free_task_marketplace_paths": 25,
+    "existing_passive_monitors": 10,
+    "fixed_cash_github_watch": 10,
+    "product_packaging_and_fast_delivery_assets": 10
+  },
+  "channel_assessments": [
+    {
+      "channel": "Xianyu existing listings",
+      "status": "views but no conversion",
+      "recommended_mode": "low-frequency monitor only",
+      "lesson": "Exposure did not produce buyer inquiry, order, or revenue."
+    },
+    {
+      "channel": "ZBJ storefront",
+      "status": "service live but no buyer/order signal",
+      "recommended_mode": "low-frequency monitor only",
+      "lesson": "Do not pay for promotion, guarantee, deposit, or bid gates without a new explicit decision."
+    },
+    {
+      "channel": "EPWK / 一品威客",
+      "status": "real demand seen but blocked by paid/account/CAPTCHA gates",
+      "recommended_mode": "watch only unless a fresh free participation path appears",
+      "lesson": "Promising demand can still be unusable when bid chances, VIP skill tags, CAPTCHA, or account timing block the path."
+    },
+    {
+      "channel": "GitHub/Boss/Algora/Opire bounties",
+      "status": "slow or noisy",
+      "recommended_mode": "opportunistic screen only",
+      "lesson": "Most candidates were stale, crowded, unclear, token-only, below target, creator-limited, or already covered by PRs."
+    },
+    {
+      "channel": "Public web, V2EX, Weibo/XHS-style search",
+      "status": "low yield so far",
+      "recommended_mode": "avoid repeating broad searches",
+      "lesson": "Repeated urgent PPT/Excel keyword searches mostly found stale, resource-like, spam, or non-buyer content."
+    },
+    {
+      "channel": "PeoplePerHour",
+      "status": "best current visible demand",
+      "recommended_mode": "attempt only if user explicitly confirms and no login/CAPTCHA/identity/payment/tax/profile gate appears",
+      "lesson": "Fresh visible buyer tasks plus a truthful sample asset may be a better 0-to-1 path than passive monitoring."
+    }
+  ],
+  "human_assistance_policy": {
+    "humans_do": [
+      "watch progress",
+      "help with account creation if needed",
+      "handle verification codes or SMS/QR login if needed",
+      "handle face recognition, KYC, identity, payment, or tax setup if needed"
+    ],
+    "humans_do_not_need_to_do": [
+      "review normal strategy",
+      "approve ordinary next steps",
+      "intervene in routine agent business judgment"
+    ]
+  },
+  "skill_policy": {
+    "file": "SKILL.md",
+    "first_version_style": "single Markdown skill; no helper scripts",
+    "modes": [
+      "watch progress in Chinese or English",
+      "load agent_context.json to reuse lessons for a separate experiment",
+      "explain support/tip options without counting tips as experiment revenue"
+    ],
+    "source_resolution": [
+      "prefer latest GitHub repository files at https://github.com/caiyongkun-coder/agent-employment-guide",
+      "otherwise read files adjacent to SKILL.md or the local development repo"
+    ],
+    "must_not_do": [
+      "invent missing payment links, QR codes, revenue, orders, or buyer signals",
+      "operate external marketplaces or logged-in accounts",
+      "submit proposals, post, comment, bid, pay, or change account/payment/tax/profile settings"
+    ]
+  },
+  "support_policy": {
+    "support_is_experiment_revenue": false,
+    "domestic_options": [
+      "Alipay QR code when provided by the owner",
+      "WeChat Pay QR code when provided by the owner"
+    ],
+    "international_options": [
+      "PayPal when configured by the owner",
+      "Ko-fi when configured by the owner"
+    ],
+    "public_repo_privacy_rule": "Do not store payer names, account identifiers, full transaction IDs, or private payment details in the public repository.",
+    "formal_payment_integration_rule": "Use an Alipay payment integration skill only when the user explicitly requests formal ordering, callbacks, reconciliation, H5/App/scan payment, or similar payment-product integration."
+  },
+  "hard_boundaries": [
+    "Do not count views, favorites, posts, proposal drafts, prepared materials, platform setup, tips, donations, support payments, or inquiries without order/payment as experiment revenue.",
+    "Do not solve CAPTCHA or ask for verification codes inside an automated maintenance task.",
+    "Do not pay for bids, membership, promotion, deposit, guarantee, or platform credits without explicit user confirmation.",
+    "Do not alter payment, tax, profile, or account settings without explicit user confirmation.",
+    "Do not fabricate experience, promise guaranteed outcomes, or provide real bank/company internal materials.",
+    "Do not go off-platform for payment when platform rules require on-platform handling."
+  ],
+  "next_safe_plan": [
+    "Keep existing Xianyu, X/Twitter, Tieba, ZBJ, and EPWK surfaces as low-frequency monitors only.",
+    "If the user explicitly confirms a PeoplePerHour attempt, use one Chrome tab and stop for login, CAPTCHA, ID, phone/SMS, payment, tax, or profile setup.",
+    "If a real buyer appears, stop broad searching and route the buyer toward a compliant on-platform order.",
+    "If payment or payout appears, verify evidence before updating revenue_ledger.csv."
+  ],
+  "file_policy": {
+    "README.md": "English repository entrance.",
+    "README.zh-CN.md": "Chinese repository entrance.",
+    "PROGRESS.md": "English human spectator/progress page; not an approval file.",
+    "PROGRESS.zh-CN.md": "Chinese human spectator/progress page; not an approval file.",
+    "agent_context.json": "Compact machine-readable state and lessons.",
+    "SKILL.md": "Lightweight Codex skill for watching progress, reusing lessons, and explaining support boundaries. It should remain read-only and script-free unless the user explicitly approves a design change."
+  },
+  "automation_policy": {
+    "daily_update_id": "agetn-playbook-daily-handoff-update",
+    "daily_update_name": "Agent Employment Guide daily progress update",
+    "daily_update_scope": [
+      "README.md",
+      "README.zh-CN.md",
+      "PROGRESS.md",
+      "PROGRESS.zh-CN.md",
+      "agent_context.json"
+    ],
+    "daily_update_preserve_files": [
+      "SKILL.md"
+    ],
+    "daily_update_must_not_do": [
+      "external acquisition",
+      "open logged-in platforms",
+      "browse marketplaces or social surfaces",
+      "post, comment, bid, or submit proposals",
+      "submit PRs",
+      "pay or change account/payment/tax/profile settings",
+      "solve CAPTCHA or ask for verification codes",
+      "commit or push"
+    ]
+  }
+}
