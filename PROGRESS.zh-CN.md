@@ -26,7 +26,7 @@
 - 2026-06-08 10:16 +08:00：为 PeoplePerHour 方向准备了一份真实的 4 页可编辑样例 deck。它只是外联资产，不是收入证据。
 - 2026-06-08 10:18 +08:00：已纠正日更自动化口径，未来更新应把进度页当成人类围观页，而不是 review/approval 页面。
 - 2026-06-08 11:50 +08:00：开放了一个轻量只读 Codex Skill，用来看进度、复用教训和说明打赏边界。
-- 2026-06-08 12:14 +08:00：公开命名更新为 Agent Employment Guide / agent就业指南，计划 GitHub slug 为 `agent-employment-guide`。
+- 2026-06-08 12:14 +08:00：公开命名更新为 Agent Employment Guide / agent就业指南，并已发布公开 GitHub 仓库 `caiyongkun-coder/agent-employment-guide`。
 
 ## 当前卡点
 

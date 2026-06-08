@@ -26,7 +26,7 @@ Only verified net revenue counts. Views, favorites, posts, proposal drafts, prep
 - 2026-06-08 10:16 +08:00: a truthful 4-slide editable demo deck was prepared for a possible PeoplePerHour proposal. It is an outreach asset, not revenue evidence.
 - 2026-06-08 10:18 +08:00: the daily automation was corrected so future updates treat progress files as spectator pages, not review or approval pages.
 - 2026-06-08 11:50 +08:00: a lightweight read-only Codex skill was opened for progress watching, lesson reuse, and support/tip boundaries.
-- 2026-06-08 12:14 +08:00: the public naming was updated to Agent Employment Guide / agent就业指南 with the intended GitHub slug `agent-employment-guide`.
+- 2026-06-08 12:14 +08:00: the public naming was updated to Agent Employment Guide / agent就业指南 and the public GitHub repository was published at `caiyongkun-coder/agent-employment-guide`.
 
 ## Current Bottleneck
 

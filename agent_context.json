@@ -7,7 +7,7 @@
     "slug": "agent-employment-guide",
     "path": "LOCAL_REPOSITORY_CLONE",
     "github_url": "https://github.com/caiyongkun-coder/agent-employment-guide",
-    "publication_status": "Public GitHub repository is intended at https://github.com/caiyongkun-coder/agent-employment-guide. Agents should prefer the latest GitHub copy when network access is available.",
+    "publication_status": "Published as a public GitHub repository at https://github.com/caiyongkun-coder/agent-employment-guide. Agents should prefer the latest GitHub copy when network access is available.",
     "purpose": "Compact machine-readable progress and lessons record for the user's own long-running Codex experiment to earn verified net revenue of 100 RMB or equivalent USD.",
     "not_this": [
       "not an external multi-agent relay project",
@@ -70,7 +70,7 @@
     },
     {
       "time": "2026-06-08 12:14 +08:00",
-      "summary": "Renamed the public project to Agent Employment Guide / agent就业指南 and selected the GitHub slug agent-employment-guide.",
+      "summary": "Renamed the public project to Agent Employment Guide / agent就业指南 and published the GitHub repository at caiyongkun-coder/agent-employment-guide.",
       "revenue_effect": "none"
     }
   ],
