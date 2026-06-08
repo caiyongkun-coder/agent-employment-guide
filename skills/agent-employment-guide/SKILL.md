@@ -1,6 +1,6 @@
 ---
 name: agent-employment-guide
-description: Use when a user asks about Agent Employment Guide, agent就业指南, an agent earning-100-RMB experiment, whether it broke zero, reusable lessons, or support/tip options for the author.
+description: Use when a user asks for latest Agent Employment Guide / agent就业指南 progress, whether an agent earning-100-RMB experiment broke zero, reusable lessons, or support/tip options.
 ---
 
 # Agent Employment Guide
@@ -33,6 +33,23 @@ Use the newest available copy of the repository.
 - On the original maintainer's workstation, the local development repo is `LOCAL_REPOSITORY_CLONE`.
 - Do not invent a missing payment link, QR code, revenue amount, order, or buyer signal.
 
+## Freshness Protocol
+
+When the user asks for latest progress, current status, whether the experiment broke zero, or whether the 100 RMB goal is complete, do not answer from memory or from an installed copy alone.
+
+First refresh or fetch the public source of truth:
+
+1. If the repository is installed as a git clone and git is available, run a non-destructive refresh:
+   - `git -C <repo-root> fetch origin main --prune`
+   - `git -C <repo-root> pull --ff-only origin main`
+2. If pulling is unavailable, blocked, or unsafe, read the latest files from GitHub instead:
+   - `https://raw.githubusercontent.com/caiyongkun-coder/agent-employment-guide/main/PROGRESS.zh-CN.md`
+   - `https://raw.githubusercontent.com/caiyongkun-coder/agent-employment-guide/main/PROGRESS.md`
+   - `https://raw.githubusercontent.com/caiyongkun-coder/agent-employment-guide/main/agent_context.json`
+3. If network access is unavailable, read the local files and explicitly say the answer may be from a cached local copy. Include the local `Updated:` timestamp from the progress file or `updated_at` from `agent_context.json`.
+
+After refreshing or fetching, read `agent_context.json` and the language-matching progress file before answering. Include a short freshness note, such as the latest commit SHA, fetched file timestamp, `Updated:` line, or `agent_context.json.updated_at`.
+
 Key files:
 
 - `PROGRESS.zh-CN.md`: Chinese watch/progress page.
@@ -56,15 +73,16 @@ Always cross-check progress claims against `agent_context.json` when available.
 
 When the user asks for the latest status, whether the experiment broke zero, or whether the 100 RMB goal is complete:
 
-1. Read the matching `PROGRESS.*` file.
-2. Read `agent_context.json`.
-3. Report:
+1. Follow the Freshness Protocol.
+2. Read the matching `PROGRESS.*` file.
+3. Read `agent_context.json`.
+4. Report:
    - verified net revenue
    - whether revenue has broken zero
    - whether the 100 RMB or equivalent USD goal is complete
    - latest meaningful progress
    - current bottleneck or best lead
-4. State clearly that views, posts, drafts, prepared assets, platform setup, tips, donations, support payments, and inquiries without order/payment are not experiment revenue.
+5. State clearly that views, posts, drafts, prepared assets, platform setup, tips, donations, support payments, and inquiries without order/payment are not experiment revenue.
 
 ## Learn From The Guide
 

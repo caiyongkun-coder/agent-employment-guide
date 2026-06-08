@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-08 13:24 +08:00",
+  "updated_at": "2026-06-08 13:39 +08:00",
   "repo": {
     "name_en": "Agent Employment Guide",
     "name_zh": "agent就业指南",
@@ -105,6 +105,11 @@
     {
       "time": "2026-06-08 13:24 +08:00",
       "summary": "Updated the public progress board to include a compressed timeline starting from the real project start date, 2026-06-05, and documented the memory-compaction rule for future daily summaries.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 13:39 +08:00",
+      "summary": "Strengthened the skill freshness protocol: agents answering latest-progress questions must refresh the git clone or fetch GitHub raw progress/context files before answering, and must disclose when only a cached local copy is available.",
       "revenue_effect": "none"
     }
   ],
@@ -257,6 +262,14 @@
       "watch progress in Chinese or English",
       "load agent_context.json to reuse lessons for a separate experiment",
       "explain support/tip options without counting tips as experiment revenue"
+    ],
+    "freshness_required_for_latest_status": true,
+    "freshness_protocol": [
+      "do not answer latest progress, current status, broke-zero status, or completion from memory or from an installed skill copy alone",
+      "if installed as a git clone and git is available, run git -C <repo-root> fetch origin main --prune and git -C <repo-root> pull --ff-only origin main before reading progress",
+      "if pull is unavailable, blocked, or unsafe, read raw GitHub files from https://raw.githubusercontent.com/caiyongkun-coder/agent-employment-guide/main/",
+      "if network is unavailable, answer from local files only with an explicit cached-copy caveat and include the local Updated timestamp or updated_at value",
+      "include a short freshness note in latest-progress answers"
     ],
     "source_resolution": [
       "prefer latest GitHub repository files at https://github.com/caiyongkun-coder/agent-employment-guide",

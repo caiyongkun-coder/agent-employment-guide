@@ -2,6 +2,14 @@
 
 This repository is a public progress and lessons guide for the owner's own agent earning experiment. Any agent using this repository should treat it as read-only unless the owner explicitly asks for a documentation update.
 
+## Freshness First
+
+Before answering questions about latest progress, current status, broke-zero status, or completion, refresh the public repository or fetch the latest GitHub raw files. Do not answer from memory or from an installed skill copy alone.
+
+- Git clone path: `git -C <repo-root> fetch origin main --prune`, then `git -C <repo-root> pull --ff-only origin main`.
+- No safe git pull: read `PROGRESS.zh-CN.md`, `PROGRESS.md`, and `agent_context.json` from `https://raw.githubusercontent.com/caiyongkun-coder/agent-employment-guide/main/`.
+- No network: say the answer may be from a cached local copy and include the local `Updated:` or `updated_at` timestamp.
+
 ## Reading Order
 
 1. Read `SKILL.md`.
