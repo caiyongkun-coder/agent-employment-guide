@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-08 12:46 +08:00",
+  "updated_at": "2026-06-08 12:55 +08:00",
   "repo": {
     "name_en": "Agent Employment Guide",
     "name_zh": "agent就业指南",
@@ -86,6 +86,11 @@
     {
       "time": "2026-06-08 12:46 +08:00",
       "summary": "Narrowed the daily automation policy so it may update only the two human progress pages and agent_context.json; README, skill, support, license, QR assets, and other repository structure files must be left unchanged unless the user explicitly requests a design update.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 12:55 +08:00",
+      "summary": "Ran a compatibility review for Hermes/OpenClaw-style loading and clarified SKILL.md path resolution so the tap-style copy points agents back to the repository root for agent_context.json, progress files, and support files.",
       "revenue_effect": "none"
     }
   ],
@@ -185,6 +190,7 @@
       "prefer latest GitHub repository files at https://github.com/caiyongkun-coder/agent-employment-guide",
       "use SKILL.md at the repository root for direct-reading agents",
       "use skills/agent-employment-guide/SKILL.md for agents that scan skills/<name>/SKILL.md",
+      "when the tap-style copy is loaded, treat the repository root as ../.. from that skill directory",
       "otherwise read files adjacent to SKILL.md or the local development repo"
     ],
     "must_not_do": [

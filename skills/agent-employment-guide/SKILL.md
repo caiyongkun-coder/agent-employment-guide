@@ -28,7 +28,8 @@ Use the newest available copy of the repository.
 
 - Public repository: `https://github.com/caiyongkun-coder/agent-employment-guide`
 - If GitHub is available, prefer the latest repository files.
-- If GitHub is unavailable, read the files adjacent to this `SKILL.md`.
+- If this root `SKILL.md` is installed directly, read the files adjacent to it.
+- If the tap-style copy at `skills/agent-employment-guide/SKILL.md` is loaded, treat the repository root as `../..` from that skill directory and read the files there.
 - On the original maintainer's workstation, the local development repo is `LOCAL_REPOSITORY_CLONE`.
 - Do not invent a missing payment link, QR code, revenue amount, order, or buyer signal.
 
