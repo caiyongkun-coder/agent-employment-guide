@@ -2,49 +2,86 @@
 
 [中文说明](README.zh-CN.md) | English
 
-Agent Employment Guide / agent就业指南 is a compact progress-and-lessons repository for one ongoing experiment: can the user's own Codex sessions earn verified net revenue of 100 RMB, or the equivalent in USD?
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Skill](https://img.shields.io/badge/SKILL.md-compatible-green.svg)](SKILL.md)
 
-This is not an open multi-agent relay. "Handoff" means continuation between the user's own Codex conversations when context gets long. Other humans and agents are spectators by default. If they want to run a similar experiment with their own agent, they can reuse the lessons here to avoid repeated mistakes.
+Agent Employment Guide / agent就业指南 is a bilingual, machine-readable progress and lessons repository for one ongoing experiment:
 
-## Current Status
+Can the user's own agent sessions earn verified net revenue of at least 100 RMB, or the equivalent in USD?
 
-- Goal: verified net revenue >= 100 RMB or equivalent USD
-- Verified net revenue: 0 RMB
-- Broke zero: No
-- Goal complete: No
-- Source ledger: `PRIVATE_MONEY_GOAL_WORKSPACE\revenue_ledger.csv`
-- Best current lead: PeoplePerHour PowerPoint/template jobs, proposal attempt not yet confirmed
-- Latest local prep: a truthful demo deck was prepared as an outreach asset, not revenue evidence
+The current answer is still: not yet.
 
-Breaking zero means confirmed net revenue is greater than 0. The goal is complete only when the ledger records verified net revenue >= 100 RMB or equivalent USD with evidence or explicit user confirmation.
+## Status
 
-Tips, donations, or support payments are not part of this 100 RMB experiment.
+| Field | Value |
+| --- | --- |
+| Goal | Verified net revenue >= 100 RMB or equivalent USD |
+| Verified net revenue | 0 RMB |
+| Broke zero | No |
+| Goal complete | No |
+| Orders | 0 |
+| Real buyer inquiries | 0 |
+| Source ledger | `PRIVATE_MONEY_GOAL_WORKSPACE\revenue_ledger.csv` |
+| Best current lead | PeoplePerHour PowerPoint/template jobs, proposal attempt not yet confirmed |
 
-## Skill
+Only verified net revenue counts. Views, favorites, posts, proposal drafts, prepared assets, platform setup, tips, donations, support payments, and inquiries without order/payment do not count.
 
-This repository includes a lightweight Codex skill in `SKILL.md`.
+## What This Is
 
-The skill lets another agent:
+This is not an open multi-agent relay. The money-making work is done by the owner's own agent sessions. "Handoff" means continuation between the owner's own conversations when context gets long.
 
-- read the latest progress in Chinese or English
-- check whether the experiment has broken zero
-- load `agent_context.json` to reuse lessons and avoid repeated mistakes
-- show the author's support/tip policy without mixing tips into the revenue goal
+Other humans and agents are spectators and learners by default. If they want to run a similar experiment with their own agent, they can reuse the lessons here to avoid repeated mistakes.
 
-There is no helper script in the first version. Agents should read the repository files directly. If Codex does not show the skill immediately after installation, restart Codex or open a new session so the skill list can be rescanned.
+## Quick Start
 
-Public repository:
+For humans:
 
-`https://github.com/caiyongkun-coder/agent-employment-guide`
+1. Read [PROGRESS.md](PROGRESS.md) or [PROGRESS.zh-CN.md](PROGRESS.zh-CN.md).
+2. Check the scoreboard: verified revenue, whether it broke zero, and latest meaningful progress.
+3. Treat this as a watch page, not a strategy approval queue.
 
-## Files
+For agents:
 
-- `SKILL.md`: Codex skill for watching progress, reusing lessons, and support/tip boundaries.
-- `README.md`: English repository entrance.
-- `README.zh-CN.md`: Chinese repository entrance.
-- `PROGRESS.md`: English human watch/progress page.
-- `PROGRESS.zh-CN.md`: Chinese human watch/progress page.
-- `agent_context.json`: compact machine-readable state for future Codex sessions and other agents that want to learn from this experiment.
+1. Read [AGENTS.md](AGENTS.md).
+2. Load [SKILL.md](SKILL.md) if your runtime supports `SKILL.md`.
+3. Read [agent_context.json](agent_context.json) for machine-readable status, lessons, boundaries, and next safe plan.
+4. Use the progress file matching the user's language.
+
+For support/tips:
+
+1. Read [SUPPORT.md](SUPPORT.md).
+2. Use the public QR assets under [assets/support](assets/support).
+3. Do not count support payments toward the 100 RMB experiment.
+
+## Skill Compatibility
+
+This repository is designed for agents that understand the open `SKILL.md` / AgentSkills-style format.
+
+Supported usage patterns:
+
+- Direct read: open [SKILL.md](SKILL.md).
+- Codex / Claude Code / Cursor style: install or copy the repository folder as a skill folder containing `SKILL.md`.
+- OpenClaw style: copy or clone this repository into a skills root such as `~/.openclaw/skills/agent-employment-guide/`.
+- Hermes style: install the direct `SKILL.md` URL, or use the tap-compatible copy at [skills/agent-employment-guide/SKILL.md](skills/agent-employment-guide/SKILL.md).
+- Any other agent: read [AGENTS.md](AGENTS.md), then [SKILL.md](SKILL.md), then [agent_context.json](agent_context.json).
+
+There are no helper scripts in the first version. Agents should read the repository files directly.
+
+## Repository Layout
+
+| Path | Purpose |
+| --- | --- |
+| `SKILL.md` | Root AgentSkills-compatible skill. |
+| `skills/agent-employment-guide/SKILL.md` | Tap-compatible copy for agents that scan `skills/<name>/SKILL.md`. |
+| `AGENTS.md` | Generic instructions for any agent reading this repository. |
+| `agent_context.json` | Machine-readable status, lessons, boundaries, and policy. |
+| `PROGRESS.md` | English progress/watch page. |
+| `PROGRESS.zh-CN.md` | Chinese progress/watch page. |
+| `README.md` | English repository entrance. |
+| `README.zh-CN.md` | Chinese repository entrance. |
+| `SUPPORT.md` | Support/tip options and privacy rules. |
+| `assets/support/` | Public support QR code assets. |
+| `LICENSE` | Apache License 2.0. |
 
 ## Human Role
 
@@ -54,34 +91,34 @@ Human help is only needed for real-world gates:
 
 - account creation
 - verification codes
-- SMS or QR login
-- CAPTCHA that requires the user
+- SMS, QR, or email login
+- CAPTCHA that requires user action
 - face recognition
 - KYC or identity verification
-- platform identity, payment, or tax setup
+- platform identity, payment, payout, or tax setup
 
-## What Others Can Learn
+## Reusable Lessons
 
 Useful lessons so far:
 
-- Views and posts are not revenue.
-- Passive listings can produce exposure without buyer conversations.
+- Exposure is not revenue.
+- Passive listings can produce views without buyer conversations.
 - Paid bid gates, identity gates, and CAPTCHA gates can block otherwise promising marketplace tasks.
-- Prepared assets help conversion but do not count as income.
+- Prepared samples help conversion but do not count as income.
 - Fresh buyer-initiated demand is more valuable than repeatedly refreshing old surfaces.
 
 ## Support
 
 Support is separate from the earning experiment and does not count toward the 100 RMB goal.
 
-- Mainland China: Alipay and WeChat Pay QR codes can be added after the owner provides them.
-- International: PayPal or Ko-fi can be added after the owner configures them.
+- Mainland China: Alipay and WeChat Pay QR codes are available in [SUPPORT.md](SUPPORT.md).
+- International: PayPal or Ko-fi may be added later after the owner configures them.
 
-Do not put payer names, account identifiers, full transaction IDs, or private payment details into this public repository.
+Do not put payer names, account identifiers, full transaction IDs, payment screenshots, tax records, or private accounting files into this public repository.
 
 ## Source Of Truth
 
-The detailed experiment lives in:
+The detailed private/local experiment materials live in:
 
 `PRIVATE_MONEY_GOAL_WORKSPACE`
 
@@ -92,18 +129,8 @@ Important source files:
 - `next_heartbeat_minimal_runbook.md`
 - `private_marketplace_candidate_pack.md`
 
-## Maintenance
+The public repository should stay compact: top-level status, meaningful progress, current bottlenecks, lessons learned, support boundaries, and next safe plan.
 
-Keep this repo short and readable. Update the top-level status, meaningful progress, current bottlenecks, lessons learned, and next safe plan. Do not append every heartbeat.
+## License
 
-The daily automation may update only:
-
-- `README.md`
-- `README.zh-CN.md`
-- `PROGRESS.md`
-- `PROGRESS.zh-CN.md`
-- `agent_context.json`
-
-It should preserve `SKILL.md` unless the user explicitly asks to change the skill.
-
-It must not open logged-in platforms, continue acquisition, post, comment, bid, submit proposals, pay, change account settings, solve CAPTCHA, or ask for verification codes.
+This project is licensed under the [Apache License 2.0](LICENSE).

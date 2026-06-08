@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-08 12:14 +08:00",
+  "updated_at": "2026-06-08 12:46 +08:00",
   "repo": {
     "name_en": "Agent Employment Guide",
     "name_zh": "agent就业指南",
@@ -71,6 +71,21 @@
     {
       "time": "2026-06-08 12:14 +08:00",
       "summary": "Renamed the public project to Agent Employment Guide / agent就业指南 and published the GitHub repository at caiyongkun-coder/agent-employment-guide.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 12:25 +08:00",
+      "summary": "Aligned local continuation notes and automations with the Agent Employment Guide path, approved read-only SKILL.md, and the rule that tips, donations, and support payments do not count as experiment revenue.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 12:42 +08:00",
+      "summary": "Formalized the repository for public use with Apache-2.0 licensing, bilingual README files, generic AgentSkills-compatible instructions, public Alipay/WeChat Pay support QR assets, and support privacy boundaries.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 12:46 +08:00",
+      "summary": "Narrowed the daily automation policy so it may update only the two human progress pages and agent_context.json; README, skill, support, license, QR assets, and other repository structure files must be left unchanged unless the user explicitly requests a design update.",
       "revenue_effect": "none"
     }
   ],
@@ -150,7 +165,17 @@
   },
   "skill_policy": {
     "file": "SKILL.md",
-    "first_version_style": "single Markdown skill; no helper scripts",
+    "tap_copy": "skills/agent-employment-guide/SKILL.md",
+    "first_version_style": "single Markdown skill with a tap-compatible copy; no helper scripts",
+    "compatibility_goal": "Support any agent runtime that can read repository instructions or SKILL.md files, not only Codex.",
+    "compatible_runtimes_examples": [
+      "Codex",
+      "OpenClaw",
+      "Hermes",
+      "Claude Code",
+      "Cursor",
+      "other agents that can read Markdown instructions"
+    ],
     "modes": [
       "watch progress in Chinese or English",
       "load agent_context.json to reuse lessons for a separate experiment",
@@ -158,6 +183,8 @@
     ],
     "source_resolution": [
       "prefer latest GitHub repository files at https://github.com/caiyongkun-coder/agent-employment-guide",
+      "use SKILL.md at the repository root for direct-reading agents",
+      "use skills/agent-employment-guide/SKILL.md for agents that scan skills/<name>/SKILL.md",
       "otherwise read files adjacent to SKILL.md or the local development repo"
     ],
     "must_not_do": [
@@ -168,9 +195,10 @@
   },
   "support_policy": {
     "support_is_experiment_revenue": false,
+    "support_file": "SUPPORT.md",
     "domestic_options": [
-      "Alipay QR code when provided by the owner",
-      "WeChat Pay QR code when provided by the owner"
+      "Alipay QR code at assets/support/alipay-qr.jpg",
+      "WeChat Pay QR code at assets/support/wechat-pay-qr.jpg"
     ],
     "international_options": [
       "PayPal when configured by the owner",
@@ -199,20 +227,40 @@
     "PROGRESS.md": "English human spectator/progress page; not an approval file.",
     "PROGRESS.zh-CN.md": "Chinese human spectator/progress page; not an approval file.",
     "agent_context.json": "Compact machine-readable state and lessons.",
-    "SKILL.md": "Lightweight Codex skill for watching progress, reusing lessons, and explaining support boundaries. It should remain read-only and script-free unless the user explicitly approves a design change."
+    "SKILL.md": "Root AgentSkills-compatible skill for watching progress, reusing lessons, and explaining support boundaries. It should remain read-only and script-free unless the user explicitly approves a design change.",
+    "skills/agent-employment-guide/SKILL.md": "Tap-compatible copy for agents that scan skills/<name>/SKILL.md.",
+    "AGENTS.md": "Generic entry instructions for any agent runtime reading this repository.",
+    "SUPPORT.md": "Public support/tip entry points and privacy/accounting boundaries.",
+    "assets/support/alipay-qr.jpg": "Public Alipay support QR asset. Support payments do not count as experiment revenue.",
+    "assets/support/wechat-pay-qr.jpg": "Public WeChat Pay support QR asset. Support payments do not count as experiment revenue.",
+    "LICENSE": "Apache License 2.0.",
+    ".gitignore": "Keeps private ledgers, payment evidence, tax records, and secrets out of the public repository."
   },
   "automation_policy": {
-    "daily_update_id": "agetn-playbook-daily-handoff-update",
+    "daily_update_id": "agent-employment-guide-daily-progress-update",
+    "daily_update_note": "Use the Agent Employment Guide name, path, and prompt as authoritative. Local Codex internal automation identifiers may differ from this public-facing key.",
     "daily_update_name": "Agent Employment Guide daily progress update",
     "daily_update_scope": [
-      "README.md",
-      "README.zh-CN.md",
+      "PROGRESS.md",
+      "PROGRESS.zh-CN.md",
+      "agent_context.json"
+    ],
+    "daily_update_only_modify_these_files": [
       "PROGRESS.md",
       "PROGRESS.zh-CN.md",
       "agent_context.json"
     ],
     "daily_update_preserve_files": [
-      "SKILL.md"
+      "README.md",
+      "README.zh-CN.md",
+      "SKILL.md",
+      "skills/agent-employment-guide/SKILL.md",
+      "AGENTS.md",
+      "SUPPORT.md",
+      "assets/support/alipay-qr.jpg",
+      "assets/support/wechat-pay-qr.jpg",
+      "LICENSE",
+      ".gitignore"
     ],
     "daily_update_must_not_do": [
       "external acquisition",

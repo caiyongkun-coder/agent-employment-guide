@@ -1,0 +1,20 @@
+# Private payment/accounting records
+private/
+support_ledger*
+payment-evidence/
+payment_evidence/
+tax-records/
+tax_records/
+*.ledger.csv
+
+# Secrets and local environment
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
