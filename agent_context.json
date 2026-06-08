@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-08 12:55 +08:00",
+  "updated_at": "2026-06-08 13:24 +08:00",
   "repo": {
     "name_en": "Agent Employment Guide",
     "name_zh": "agent就业指南",
@@ -8,6 +8,7 @@
     "path": "LOCAL_REPOSITORY_CLONE",
     "github_url": "https://github.com/caiyongkun-coder/agent-employment-guide",
     "publication_status": "Published as a public GitHub repository at https://github.com/caiyongkun-coder/agent-employment-guide. Agents should prefer the latest GitHub copy when network access is available.",
+    "project_started_at": "2026-06-05",
     "purpose": "Compact machine-readable progress and lessons record for the user's own long-running Codex experiment to earn verified net revenue of 100 RMB or equivalent USD.",
     "not_this": [
       "not an external multi-agent relay project",
@@ -27,6 +28,9 @@
     "materials_dir": "PRIVATE_MONEY_GOAL_WORKSPACE",
     "primary_handoff": "PRIVATE_MONEY_GOAL_WORKSPACE/LATEST_GOAL_HANDOFF.md",
     "ledger": "PRIVATE_MONEY_GOAL_WORKSPACE/revenue_ledger.csv",
+    "action_log": "PRIVATE_MONEY_GOAL_WORKSPACE/action_log.md",
+    "pivot_decision_log": "PRIVATE_MONEY_GOAL_WORKSPACE/pivot_decision_log.csv",
+    "xianyu_metrics": "PRIVATE_MONEY_GOAL_WORKSPACE/xianyu_72h_metrics.csv",
     "runbook": "PRIVATE_MONEY_GOAL_WORKSPACE/next_heartbeat_minimal_runbook.md",
     "peopleperhour_pack": "PRIVATE_MONEY_GOAL_WORKSPACE/private_marketplace_candidate_pack.md"
   },
@@ -92,12 +96,75 @@
       "time": "2026-06-08 12:55 +08:00",
       "summary": "Ran a compatibility review for Hermes/OpenClaw-style loading and clarified SKILL.md path resolution so the tap-style copy points agents back to the repository root for agent_context.json, progress files, and support files.",
       "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 13:16 +08:00",
+      "summary": "Read-only V2EX public API/RSS screen found no fresh small office/PPT buyer; a visible algorithm bounty was complex and not a fast 100 RMB office sprint. No write action or revenue occurred.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 13:24 +08:00",
+      "summary": "Updated the public progress board to include a compressed timeline starting from the real project start date, 2026-06-05, and documented the memory-compaction rule for future daily summaries.",
+      "revenue_effect": "none"
+    }
+  ],
+  "progress_memory_policy": {
+    "project_started_at": "2026-06-05",
+    "style": "compressed timeline similar to context compaction",
+    "rules": [
+      "early history should be summarized by date and lesson, not copied as heartbeat logs",
+      "recent days should keep more operational detail",
+      "the newest meaningful checks should be the most specific",
+      "repeated no-signal heartbeats should be collapsed unless they change the plan",
+      "verified revenue, broke-zero status, orders, inquiries, evidence rules, and hard safety boundaries must never be compressed away"
+    ],
+    "daily_automation_target_shape": [
+      "scoreboard",
+      "memory shape / compression rule",
+      "latest meaningful progress",
+      "compressed timeline from 2026-06-05",
+      "current bottleneck",
+      "human assistance gates",
+      "tried directions",
+      "lessons",
+      "next safe plan",
+      "source files"
+    ]
+  },
+  "timeline_by_date": [
+    {
+      "date": "2026-06-05",
+      "detail_level": "compressed",
+      "summary": "Experiment started. Packaged existing bank data warehouse / SQL interview-story material into a 109 RMB Xianyu service offer, published the first listing, prepared/sent X/Twitter CTA material, and created revenue verification rules. Views appeared but no inquiry, order, or verified revenue. Late-day work added or prepared resume rewrite and night-rush urgent office-help directions.",
+      "revenue_effect": "none",
+      "lesson": "A live listing and early views are not revenue; evidence rules are needed before counting anything."
+    },
+    {
+      "date": "2026-06-06",
+      "detail_level": "compressed",
+      "summary": "Expanded from one Xianyu listing into multiple urgent-office offers, improved night-rush visuals, added a morning/same-day urgent offer, and tightened X/Twitter outreach and conversion material. No-inquiry thresholds triggered strategy-review and pivot rules.",
+      "revenue_effect": "none",
+      "lesson": "When exposure does not become buyer conversation, stop spending most effort on listing-surface tweaks."
+    },
+    {
+      "date": "2026-06-07",
+      "detail_level": "medium",
+      "summary": "Broadened into active acquisition and task marketplaces. The 19 RMB diagnostic Xianyu funnel appeared deleted/unavailable and cannot complete the goal alone. GitHub/Boss/Algora/Opire screens found no clean fixed-cash low-competition task. Tieba and public buyer-intent searches were low-yield or unstable. ZBJ service was published and public detail verified, but no buyer/order appeared. EPWK showed real demand but was blocked by paid bid chances, membership/skill tags, CAPTCHA, account timing, or detail gates.",
+      "revenue_effect": "none",
+      "lesson": "Marketplace demand can be real but unusable when the free participation path is blocked."
+    },
+    {
+      "date": "2026-06-08",
+      "detail_level": "detailed",
+      "summary": "Old surfaces kept producing exposure but no conversion. PeoplePerHour became the best visible fresh buyer-demand path, with local proposal previews and a truthful sample deck prepared but no proposal submitted. X buyer signal @N1C0323 remained the best X write candidate. V2EX showed no fast small office/PPT buyer. Agent Employment Guide was formalized as a public bilingual progress/lessons repository with generic skill support and support-payment boundaries.",
+      "revenue_effect": "none",
+      "lesson": "The next meaningful move needs explicit user confirmation for a write/account action, or a genuinely fresh read-only free-path discovery."
     }
   ],
   "current_best_lead": {
-    "channel": "PeoplePerHour",
-    "type": "PowerPoint/template remote jobs",
-    "status": "read-only screened; proposal attempt not yet confirmed by user",
+    "channel": "X/Twitter and PeoplePerHour",
+    "type": "fresh PPT/design buyer signal plus PowerPoint/template remote jobs",
+    "status": "read-only screened; no reply, DM, proposal, login, or bid has been confirmed by user",
     "candidate_budgets_usd": [
       110,
       121,
@@ -108,7 +175,12 @@
       "sample_deck_pptx": "PRIVATE_MONEY_GOAL_WORKSPACE/private_sample_asset.pptx",
       "sample_deck_contact_sheet": "PRIVATE_MONEY_GOAL_WORKSPACE/private_sample_contact_sheet.png"
     },
-    "hard_boundary": "Do not submit a proposal, bid, message, registration, profile/contact update, or portfolio/contact details unless the user explicitly confirms the PeoplePerHour attempt."
+    "x_candidate": {
+      "handle": "@N1C0323",
+      "url": "https://x.com/N1C0323/status/2063801650372882821",
+      "latest_known_status": "0 replies at 2026-06-08 13:04 +08:00; about 1740 views, 14 likes, 2 retweets, 2 bookmarks"
+    },
+    "hard_boundary": "Do not reply, DM, submit a proposal, bid, message, register, edit profile/contact details, or share portfolio/contact details unless the user explicitly confirms that specific write/account attempt."
   },
   "attention_budget_next_agent_percent": {
     "fresh_buyer_initiated_acquisition_or_peopleperhour_if_user_confirms": 45,
@@ -223,7 +295,8 @@
   ],
   "next_safe_plan": [
     "Keep existing Xianyu, X/Twitter, Tieba, ZBJ, and EPWK surfaces as low-frequency monitors only.",
-    "If the user explicitly confirms a PeoplePerHour attempt, use one Chrome tab and stop for login, CAPTCHA, ID, phone/SMS, payment, tax, or profile setup.",
+    "If the user explicitly confirms X outreach, send at most one concise Spanish reply/DM to @N1C0323 and do not broaden into extra writes.",
+    "If the user explicitly confirms a PeoplePerHour attempt, use one Chrome tab and stop for login, CAPTCHA, ID, phone/SMS, payment, tax, profile, portfolio, or contact setup.",
     "If a real buyer appears, stop broad searching and route the buyer toward a compliant on-platform order.",
     "If payment or payout appears, verify evidence before updating revenue_ledger.csv."
   ],
@@ -256,6 +329,23 @@
       "PROGRESS.zh-CN.md",
       "agent_context.json"
     ],
+    "daily_update_summary_style": {
+      "project_started_at": "2026-06-05",
+      "compression_rule": "Maintain a context-compaction style board: older dates summarized by date and lesson, recent days more detailed, newest meaningful progress most specific.",
+      "must_preserve": [
+        "verified revenue and broke-zero status",
+        "orders and real buyer inquiries",
+        "completion/evidence rules",
+        "human assistance gates",
+        "current best write candidates and confirmation boundaries",
+        "support payments are not experiment revenue"
+      ],
+      "must_collapse": [
+        "repeated no-signal heartbeats",
+        "duplicated old-page monitoring",
+        "raw search/result lists unless they changed the plan"
+      ]
+    },
     "daily_update_preserve_files": [
       "README.md",
       "README.zh-CN.md",
