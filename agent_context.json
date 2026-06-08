@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-06-08 17:30 +08:00",
-  "freshness_note": "GitHub fetch/pull was attempted during the daily run, but network access to github.com was unavailable; this snapshot is based on local source-of-truth files.",
+  "updated_at": "2026-06-08 17:46 +08:00",
+  "freshness_note": "Manual trigger based on local source-of-truth files under PRIVATE_MONEY_GOAL_WORKSPACE; revenue remains sourced from revenue_ledger.csv.",
   "repo": {
     "name_en": "Agent Employment Guide",
     "name_zh": "agent就业指南",
@@ -48,8 +48,18 @@
   },
   "latest_updates": [
     {
-      "time": "2026-06-08 17:12 +08:00",
-      "summary": "Updated the income heartbeat automation in place to read the latest X buyer-signal screen, the Freelancer REDACTED_MARKETPLACE_PROJECT_ID user-confirmed execution checklist, and the GitHub/Boss screen.",
+      "time": "2026-06-08 17:46 +08:00",
+      "summary": "Created a user-confirmed execution checklist for Freelancer REDACTED_MARKETPLACE_PROJECT_ID and updated the heartbeat automation to read it. No login, bid, message, upload, inquiry, order, payout, or revenue occurred.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 17:37 +08:00",
+      "summary": "Created and verified a local dummy PDF-to-Word/Excel conversion sample for Freelancer REDACTED_MARKETPLACE_PROJECT_ID. It is proposal support only and requires separate user approval before any attachment use.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-08 17:16-17:21 +08:00",
+      "summary": "Read-only Freelancer screen found payment-verified adjacent routes: REDACTED_MARKETPLACE_PROJECT_ID Urgent PDF Edit and Convert and #39701267 Power Pivot / Power Query Specialist Needed. No external write action or revenue occurred.",
       "revenue_effect": "none"
     },
     {
@@ -60,16 +70,6 @@
     {
       "time": "2026-06-08 16:59 +08:00",
       "summary": "Read-only GitHub/Boss screen found no clean contributor-startable fixed USD/RMB task. Prepared a one-page user-confirmed execution checklist for Freelancer REDACTED_MARKETPLACE_PROJECT_ID.",
-      "revenue_effect": "none"
-    },
-    {
-      "time": "2026-06-08 16:42-16:50 +08:00",
-      "summary": "Read-only Freelancer rechecks kept REDACTED_MARKETPLACE_PROJECT_ID first: Open/Open at USD 10-30, payment-method verified buyer, 6 proposals. Similar Excel routes did not displace it.",
-      "revenue_effect": "none"
-    },
-    {
-      "time": "2026-06-08 16:30 +08:00",
-      "summary": "Created and verified a generic dummy-data micro Excel workbook for Freelancer REDACTED_MARKETPLACE_PROJECT_ID. It is a sample asset only and needs separate user approval before any upload.",
       "revenue_effect": "none"
     },
     {
@@ -99,28 +99,30 @@
     },
     {
       "date": "2026-06-08",
-      "summary": "Old surfaces kept producing exposure but no conversion. PeoplePerHour and X/Twitter produced possible write candidates earlier, then the strongest current confirmed-write candidate shifted to Freelancer REDACTED_MARKETPLACE_PROJECT_ID, a payment-method-verified micro Excel automation job. Local previews and workbook samples were prepared, but no write action, login, bid, message, upload, inquiry, order, payout, or revenue occurred. The public repository was formalized as Agent Employment Guide / agent就业指南.",
+      "summary": "Old surfaces kept producing exposure but no conversion. PeoplePerHour and X/Twitter produced possible write candidates earlier. Later Freelancer screens made REDACTED_MARKETPLACE_PROJECT_ID the best Excel-first confirmed-write candidate, while REDACTED_MARKETPLACE_PROJECT_ID became the best adjacent Office/PDF route if the user permits a non-Excel-only Freelancer attempt. Local proposal previews, execution checklists, and sample assets were prepared, but no marketplace write action, login, bid, message, upload, inquiry, order, payout, or revenue occurred.",
       "revenue_effect": "none",
       "lesson": "The next meaningful move needs explicit user confirmation for a write/account action, or a genuinely fresh read-only free-path discovery."
     }
   ],
   "current_best_lead": {
     "channel": "Freelancer",
-    "project_id": "40278122",
-    "title": "Excel Spreadsheet Automation Specialist Needed",
-    "status": "Open/Open for bidding in latest read-only public rechecks",
-    "budget": "USD 10-30",
-    "recommended_bid_if_user_confirms": "USD 30 / 1 day",
-    "buyer_surface": "payment method verified; 6 proposals observed",
-    "local_checklist": "PRIVATE_MONEY_GOAL_WORKSPACE/freelancer_40278122_user_confirmed_execution_checklist_20260608.md",
-    "local_sample_workbook": "PRIVATE_MONEY_GOAL_WORKSPACE/outreach_assets/freelancer_40278122_micro_excel_sample_20260608/micro_excel_automation_sample.xlsx",
+    "primary_excel_first_project_id": "40278122",
+    "primary_excel_first_title": "Excel Spreadsheet Automation Specialist Needed",
+    "primary_excel_first_status": "Open/Open for bidding in latest read-only public rechecks; USD 10-30; payment-method verified buyer; 6 proposals observed",
+    "primary_excel_first_checklist": "PRIVATE_MONEY_GOAL_WORKSPACE/freelancer_40278122_user_confirmed_execution_checklist_20260608.md",
+    "adjacent_office_project_id": "39710335",
+    "adjacent_office_title": "Urgent PDF Edit and Convert",
+    "adjacent_office_status": "Open/Open for bidding in latest read-only screen; USD 10-100; payment-method verified buyer",
+    "adjacent_office_recommended_bid_if_user_confirms": "USD 80 / 1 day",
+    "adjacent_office_checklist": "PRIVATE_MONEY_GOAL_WORKSPACE/freelancer_39710335_user_confirmed_execution_checklist_20260608.md",
+    "adjacent_office_sample_assets": "PRIVATE_MONEY_GOAL_WORKSPACE/outreach_assets/freelancer_39710335_pdf_conversion_sample_20260608",
     "hard_boundary": "Do not log in, bid, message, upload, change account/profile/payment/tax/contact settings, or submit anything unless the user explicitly confirms that specific Freelancer write/account action. Attachment use needs separate explicit approval."
   },
   "channel_weights_next_agent_percent": {
-    "user_confirmed_freelancer_40278122_or_fresh_marketplace_write_path": 45,
+    "user_confirmed_freelancer_write_path": 50,
     "fresh_single_platform_read_only_free_path_discovery": 25,
     "existing_passive_monitors": 10,
-    "fixed_cash_github_watch": 10,
+    "fixed_cash_github_watch": 5,
     "product_packaging_and_fast_delivery_assets": 10
   },
   "channel_assessments": [
@@ -132,9 +134,9 @@
     },
     {
       "channel": "Freelancer",
-      "status": "REDACTED_MARKETPLACE_PROJECT_ID is the current strongest payment-verified micro route, but write/account action requires explicit user confirmation",
+      "status": "REDACTED_MARKETPLACE_PROJECT_ID is the current Excel-first payment-verified micro route; REDACTED_MARKETPLACE_PROJECT_ID is the best adjacent Office/PDF route if the user permits a non-Excel-only Freelancer attempt. Both require explicit user confirmation before write/account action.",
       "recommended_mode": "use only after user-confirmed write/account action; otherwise read-only discovery",
-      "lesson": "A prepared sample and checklist improve readiness but do not count as revenue."
+      "lesson": "Prepared samples and checklists improve readiness but do not count as revenue."
     },
     {
       "channel": "ZBJ storefront",
@@ -198,9 +200,10 @@
   ],
   "next_safe_plan": [
     "Keep existing Xianyu, X/Twitter, Tieba, ZBJ, and EPWK surfaces as low-frequency monitors only.",
-    "If the user explicitly confirms Freelancer REDACTED_MARKETPLACE_PROJECT_ID, use the prepared execution checklist before any submit button.",
-    "Attach the micro Excel workbook only with separate explicit user approval.",
-    "Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit gates, or private workbook/customer/staff/sales/financial data.",
+    "If the user explicitly confirms Freelancer REDACTED_MARKETPLACE_PROJECT_ID, use its prepared execution checklist before any submit button.",
+    "If the user explicitly confirms Freelancer REDACTED_MARKETPLACE_PROJECT_ID, use its prepared execution checklist before any submit button.",
+    "Attach sample assets only with separate explicit user approval.",
+    "Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit gates, video-call requirements, or private workbook/customer/staff/sales/financial/document data.",
     "If a real buyer appears, stop broad searching and route the buyer toward a compliant on-platform order.",
     "If payment or payout appears, verify evidence before updating revenue_ledger.csv."
   ],
