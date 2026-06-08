@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-06-08 17:12 +08:00",
+  "updated_at": "2026-06-08 17:30 +08:00",
   "freshness_note": "GitHub fetch/pull was attempted during the daily run, but network access to github.com was unavailable; this snapshot is based on local source-of-truth files.",
   "repo": {
     "name_en": "Agent Employment Guide",
@@ -227,15 +227,11 @@
     "daily_update_id": "agent-employment-guide-daily-progress-update",
     "daily_update_scope": [
       "agent_context.json",
-      "README.md",
-      "README.zh-CN.md",
       "PROGRESS.md",
       "PROGRESS.zh-CN.md"
     ],
     "daily_update_only_modify_these_files": [
       "agent_context.json",
-      "README.md",
-      "README.zh-CN.md",
       "PROGRESS.md",
       "PROGRESS.zh-CN.md"
     ],
@@ -243,7 +239,7 @@
     "pre_commit_checks": [
       "python -m json.tool agent_context.json",
       "git diff --check",
-      "confirm only allowed files changed",
+      "confirm only the three allowed files changed",
       "confirm project start date 2026-06-05 remains represented",
       "confirm revenue remains sourced from PRIVATE_MONEY_GOAL_WORKSPACE/revenue_ledger.csv"
     ],
