@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-06-08 17:58 +08:00",
-  "freshness_note": "Manual cleanup removed private/local scheduling configuration from the public snapshot; revenue remains sourced from revenue_ledger.csv.",
+  "updated_at": "2026-06-09 10:15 +08:00",
+  "freshness_note": "Updated from local source-of-truth files under PRIVATE_MONEY_GOAL_WORKSPACE. Revenue remains sourced only from revenue_ledger.csv.",
   "repo": {
     "name_en": "Agent Employment Guide",
     "name_zh": "agent就业指南",
@@ -48,33 +48,28 @@
   },
   "latest_updates": [
     {
-      "time": "2026-06-08 17:46 +08:00",
-      "summary": "Created a user-confirmed execution checklist for Freelancer REDACTED_MARKETPLACE_PROJECT_ID. No login, bid, message, upload, inquiry, order, payout, or revenue occurred.",
+      "time": "2026-06-09 10:12 +08:00",
+      "summary": "Freelancer REDACTED_MARKETPLACE_PROJECT_ID direct public page was resolved and verified as active/open, paid on delivery, payment-method verified, fixed AUD 30-250, 13 bids. It is a backup candidate below REDACTED_MARKETPLACE_PROJECT_ID; no bid preview or write action occurred.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-08 17:37 +08:00",
-      "summary": "Created and verified a local dummy PDF-to-Word/Excel conversion sample for Freelancer REDACTED_MARKETPLACE_PROJECT_ID. It is proposal support only and requires separate user approval before any attachment use.",
+      "time": "2026-06-09 10:05 +08:00",
+      "summary": "Read-only X/Twitter searches for paid Excel/PPT/data-entry help found no clean fixed-scope fixed-cash buyer route. No X write action occurred.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-08 17:16-17:21 +08:00",
-      "summary": "Read-only Freelancer screen found payment-verified adjacent routes: REDACTED_MARKETPLACE_PROJECT_ID Urgent PDF Edit and Convert and #39701267 Power Pivot / Power Query Specialist Needed. No external write action or revenue occurred.",
+      "time": "2026-06-09 10:00 +08:00",
+      "summary": "Fresh Freelancer Office/Data public API screen found no route stronger than REDACTED_MARKETPLACE_PROJECT_ID. REDACTED_MARKETPLACE_PROJECT_ID was initially watch-only before the 10:12 direct-page resolution.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-08 17:06 +08:00",
-      "summary": "Read-only X/Twitter buyer-signal screen found no fresh clear buyer with an explicit paid-task or hire/request signal. No X write action or revenue occurred.",
+      "time": "2026-06-09 09:54 +08:00",
+      "summary": "Freelancer REDACTED_MARKETPLACE_PROJECT_ID direct/API recheck kept it first: HTTP 200, Data Entry for Course Notes, Open for bidding, Paid on delivery, Payment method verified, fixed USD 250-750, 24 bids.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-08 16:59 +08:00",
-      "summary": "Read-only GitHub/Boss screen found no clean contributor-startable fixed USD/RMB task. Prepared a one-page user-confirmed execution checklist for Freelancer REDACTED_MARKETPLACE_PROJECT_ID.",
-      "revenue_effect": "none"
-    },
-    {
-      "time": "2026-06-08 15:20 +08:00",
-      "summary": "Latest old-platform heartbeat showed Xianyu views primary/resume/night/morning/diagnostic 118/79/103/70/56 with 0 inquiries, 0 orders, and 0 revenue.",
+      "time": "2026-06-09 08:51 +08:00",
+      "summary": "Local capability verification found no reliable PSD/AI source-file toolchain, keeping Freelancer REDACTED_MARKETPLACE_PROJECT_ID watch-only despite acceptable budget.",
       "revenue_effect": "none"
     }
   ],
@@ -99,31 +94,40 @@
     },
     {
       "date": "2026-06-08",
-      "summary": "Old surfaces kept producing exposure but no conversion. PeoplePerHour and X/Twitter produced possible write candidates earlier. Later Freelancer screens made REDACTED_MARKETPLACE_PROJECT_ID the best Excel-first confirmed-write candidate, while REDACTED_MARKETPLACE_PROJECT_ID became the best adjacent Office/PDF route if the user permits a non-Excel-only Freelancer attempt. Local proposal previews, execution checklists, and sample assets were prepared, but no marketplace write action, login, bid, message, upload, inquiry, order, payout, or revenue occurred.",
+      "summary": "Old surfaces kept producing exposure but no conversion. PeoplePerHour, X/Twitter, and Freelancer produced possible write candidates. Freelancer REDACTED_MARKETPLACE_PROJECT_ID and REDACTED_MARKETPLACE_PROJECT_ID became prepared routes with execution checklists and local proposal assets, but no marketplace write action, login, bid, message, upload, inquiry, order, payout, or revenue occurred.",
       "revenue_effect": "none",
-      "lesson": "The next meaningful move needs explicit user confirmation for a write/account action, or a genuinely fresh read-only free-path discovery."
+      "lesson": "Prepared proposal routes still need explicit user confirmation for any platform write/account action."
+    },
+    {
+      "date": "2026-06-09",
+      "summary": "Active acquisition shifted to a stronger Freelancer stack. REDACTED_MARKETPLACE_PROJECT_ID is first because it remains active/open, has a larger fixed budget, fits Office/data capability, and has direct-page paid/payment-verification evidence. REDACTED_MARKETPLACE_PROJECT_ID is now a verified public-page backup. Upwork REDACTED_MARKETPLACE_PROJECT_ID and X @takkobel remain confirmation-gated. REDACTED_MARKETPLACE_PROJECT_ID remains watch-only due PSD/AI source-file requirements.",
+      "revenue_effect": "none",
+      "lesson": "The best current routes are not revenue until a confirmed order/payment is verified in the ledger."
     }
   ],
   "current_best_lead": {
     "channel": "Freelancer",
-    "primary_excel_first_project_id": "40278122",
-    "primary_excel_first_title": "Excel Spreadsheet Automation Specialist Needed",
-    "primary_excel_first_status": "Open/Open for bidding in latest read-only public rechecks; USD 10-30; payment-method verified buyer; 6 proposals observed",
-    "primary_excel_first_checklist": "PRIVATE_MONEY_GOAL_WORKSPACE/freelancer_40278122_user_confirmed_execution_checklist_20260608.md",
-    "adjacent_office_project_id": "39710335",
-    "adjacent_office_title": "Urgent PDF Edit and Convert",
-    "adjacent_office_status": "Open/Open for bidding in latest read-only screen; USD 10-100; payment-method verified buyer",
-    "adjacent_office_recommended_bid_if_user_confirms": "USD 80 / 1 day",
-    "adjacent_office_checklist": "PRIVATE_MONEY_GOAL_WORKSPACE/freelancer_39710335_user_confirmed_execution_checklist_20260608.md",
-    "adjacent_office_sample_assets": "PRIVATE_MONEY_GOAL_WORKSPACE/outreach_assets/freelancer_39710335_pdf_conversion_sample_20260608",
-    "hard_boundary": "Do not log in, bid, message, upload, change account/profile/payment/tax/contact settings, or submit anything unless the user explicitly confirms that specific Freelancer write/account action. Attachment use needs separate explicit approval."
+    "primary_project_id": "40485271",
+    "primary_title": "Data Entry for Course Notes",
+    "primary_status": "Direct page and public API rechecked 2026-06-09 09:54 +08:00: HTTP 200, Open for bidding, Paid on delivery, Payment method verified, fixed USD 250-750, 24 bids.",
+    "primary_action_boundary": "Use only after explicit user confirmation for Freelancer write/account action, immediate direct-page recheck, and stop at login/CAPTCHA/KYC/payment/tax/profile/bid-credit or other gates.",
+    "backup_project_id": "40500862",
+    "backup_title": "Australian New-Mum Instagram Influencer List",
+    "backup_status": "Resolved 2026-06-09 10:12 +08:00 to a direct public page; active, fixed AUD 30-250, payment-method verified, 13 bids; backup only below REDACTED_MARKETPLACE_PROJECT_ID.",
+    "backup_action_boundary": "Any future action needs explicit Freelancer confirmation, immediate direct-page recheck, and public-info-only social lead research boundaries. No bid preview exists yet.",
+    "other_backups": [
+      "Upwork REDACTED_MARKETPLACE_PROJECT_ID: prepared single-platform backup, confirmation-gated",
+      "X @takkobel: buyer-like Excel signal, confirmation-gated, requires safe platform/escrow path",
+      "Freelancer REDACTED_MARKETPLACE_PROJECT_ID: watch-only due PSD/AI source-file requirement"
+    ]
   },
   "channel_weights_next_agent_percent": {
-    "user_confirmed_freelancer_write_path": 50,
+    "user_confirmed_freelancer_40485271_write_path": 45,
     "fresh_single_platform_read_only_free_path_discovery": 25,
+    "freelancer_40500862_backup_after_confirmation": 10,
     "existing_passive_monitors": 10,
-    "fixed_cash_github_watch": 5,
-    "product_packaging_and_fast_delivery_assets": 10
+    "upwork_or_x_confirmation_gated_backups": 5,
+    "fixed_cash_github_watch": 5
   },
   "channel_assessments": [
     {
@@ -134,19 +138,25 @@
     },
     {
       "channel": "Freelancer",
-      "status": "REDACTED_MARKETPLACE_PROJECT_ID is the current Excel-first payment-verified micro route; REDACTED_MARKETPLACE_PROJECT_ID is the best adjacent Office/PDF route if the user permits a non-Excel-only Freelancer attempt. Both require explicit user confirmation before write/account action.",
+      "status": "REDACTED_MARKETPLACE_PROJECT_ID is current first route; REDACTED_MARKETPLACE_PROJECT_ID is verified public-page backup; both require explicit user confirmation before any write/account action.",
       "recommended_mode": "use only after user-confirmed write/account action; otherwise read-only discovery",
       "lesson": "Prepared samples and checklists improve readiness but do not count as revenue."
     },
     {
-      "channel": "ZBJ storefront",
-      "status": "service live but no buyer/order signal",
-      "recommended_mode": "low-frequency monitor only",
-      "lesson": "Do not pay for promotion, guarantee, deposit, or bid gates without a new explicit decision."
+      "channel": "Upwork",
+      "status": "REDACTED_MARKETPLACE_PROJECT_ID is a prepared backup but login/proposal/platform gates require explicit confirmation.",
+      "recommended_mode": "confirmation-gated backup",
+      "lesson": "A public listing is not actionable until platform access and proposal constraints are safely handled."
     },
     {
-      "channel": "EPWK",
-      "status": "real demand seen but blocked by paid/account/CAPTCHA/skill/account-timing gates",
+      "channel": "X/Twitter and public buyer-intent search",
+      "status": "latest read-only searches found no clean fixed-scope fixed-cash buyer route; @takkobel remains a confirmation-gated social lead only.",
+      "recommended_mode": "avoid repeated broad searches; write only after explicit user confirmation",
+      "lesson": "Repeated urgent PPT/Excel keywords mostly find stale, resource-like, spam, or non-buyer content."
+    },
+    {
+      "channel": "ZBJ and EPWK",
+      "status": "live or demand-bearing but no buyer/order/revenue; EPWK routes blocked by paid/account/CAPTCHA/skill/account-timing gates.",
       "recommended_mode": "watch only unless a fresh free participation path appears",
       "lesson": "Promising demand can still be unusable when platform participation is gated."
     },
@@ -155,12 +165,6 @@
       "status": "no clean contributor-startable fixed USD/RMB task in latest screen",
       "recommended_mode": "opportunistic screen only",
       "lesson": "Most candidates were stale, crowded, unclear, below target, creator-limited, or already covered by PRs."
-    },
-    {
-      "channel": "X/Twitter and public buyer-intent search",
-      "status": "latest read-only search found no fresh clear buyer signal",
-      "recommended_mode": "avoid repeated broad searches; write only after explicit user confirmation",
-      "lesson": "Repeated urgent PPT/Excel keywords mostly found stale, resource-like, spam, or non-buyer content."
     }
   ],
   "human_assistance_policy": {
@@ -200,11 +204,11 @@
   ],
   "next_safe_plan": [
     "Keep existing Xianyu, X/Twitter, Tieba, ZBJ, and EPWK surfaces as low-frequency monitors only.",
-    "If the user explicitly confirms Freelancer REDACTED_MARKETPLACE_PROJECT_ID, use its prepared execution checklist before any submit button.",
-    "If the user explicitly confirms Freelancer REDACTED_MARKETPLACE_PROJECT_ID, use its prepared execution checklist before any submit button.",
-    "Attach sample assets only with separate explicit user approval.",
-    "Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit gates, video-call requirements, or private workbook/customer/staff/sales/financial/document data.",
-    "If a real buyer appears, stop broad searching and route the buyer toward a compliant on-platform order.",
+    "If the user explicitly confirms Freelancer REDACTED_MARKETPLACE_PROJECT_ID, immediately recheck the direct page and follow the matching route rules before any submit button.",
+    "Treat Freelancer REDACTED_MARKETPLACE_PROJECT_ID as backup only after explicit confirmation, direct-page recheck, and public-info-only research boundaries.",
+    "Use Upwork REDACTED_MARKETPLACE_PROJECT_ID only after explicit Upwork login/proposal confirmation.",
+    "Use X @takkobel only after explicit X reply confirmation and only with safe scope, redacted data, and an on-platform or escrow payment path.",
+    "Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit gates, video-call requirements, private data, or unsupported source-file requirements.",
     "If payment or payout appears, verify evidence before updating revenue_ledger.csv."
   ],
   "file_policy": {

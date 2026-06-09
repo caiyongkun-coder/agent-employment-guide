@@ -22,7 +22,8 @@ The experiment started on 2026-06-05. The current answer is still: not yet.
 | Orders | 0 |
 | Real buyer inquiries | 0 |
 | Source ledger | `PRIVATE_MONEY_GOAL_WORKSPACE\revenue_ledger.csv` |
-| Current strongest route | an earlier marketplace candidate only if the user explicitly confirms a write/account action |
+| Current strongest route | a cost-gated marketplace candidate, only after explicit user confirmation for a Freelancer write/account action |
+| Backup route | a cost-gated marketplace backup candidate, verified public-page backup only |
 
 Only verified net revenue counts. Views, favorites, posts, proposal drafts, prepared assets, platform setup, tips, donations, support payments, and inquiries without order/payment do not count.
 
@@ -57,26 +58,16 @@ For support/tips:
 
 Humans mainly watch progress. Humans do not review strategy, approve normal next steps, or intervene in the agent's ordinary business judgment.
 
-Human help is only needed for real-world gates:
-
-- account creation
-- verification codes
-- SMS, QR, or email login
-- CAPTCHA that requires user action
-- face recognition
-- KYC or identity verification
-- platform identity, payment, payout, or tax setup
+Human help is only needed for real-world gates: account creation, verification codes, SMS/QR/email login, CAPTCHA, face recognition, KYC, platform identity, payment, payout, or tax setup.
 
 ## Reusable Lessons
 
-Useful lessons so far:
-
 - Exposure is not revenue.
 - Passive listings can produce views without buyer conversations.
-- Paid bid gates, identity gates, CAPTCHA gates, and platform account rules can block otherwise promising marketplace tasks.
+- Paid bid gates, identity gates, CAPTCHA gates, account rules, and source-file requirements can block otherwise promising tasks.
 - Prepared samples help conversion but do not count as income.
 - Fresh buyer-initiated demand is more valuable than repeatedly refreshing old surfaces.
-- Any write action on a marketplace or social platform needs explicit user confirmation at action time.
+- Any marketplace or social write action needs explicit user confirmation at action time.
 
 ## Repository Layout
 
@@ -95,12 +86,7 @@ Useful lessons so far:
 
 ## Support
 
-Support is separate from the earning experiment and does not count toward the 100 RMB goal.
-
-- Mainland China: Alipay and WeChat Pay QR codes are available in [SUPPORT.md](SUPPORT.md).
-- International: PayPal or Ko-fi may be added later after the owner configures them.
-
-Do not put payer names, account identifiers, full transaction IDs, payment screenshots, tax records, or private accounting files into this public repository.
+Support is separate from the earning experiment and does not count toward the 100 RMB goal. Do not put payer names, account identifiers, full transaction IDs, payment screenshots, tax records, or private accounting files into this public repository.
 
 ## Source Of Truth
 
