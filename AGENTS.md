@@ -25,6 +25,14 @@ Before answering questions about latest progress, current status, broke-zero sta
 - Other agents may reuse lessons for their own separate experiments, but they do not join the owner's experiment.
 - Humans watch progress and help only with real-world gates such as account creation, login, CAPTCHA, KYC, payment, payout, or tax setup.
 
+## Public Privacy Rules
+
+This is a public repository. When updating docs or summaries, publish only high-level status, date-level summaries, route classes, reusable lessons, and boundaries.
+
+Do not publish buyer or lead identifiers, platform user IDs or handles tied to leads, account follower/content/message metrics, message/inbox/chat/DM/comment contents, direct marketplace project IDs unless explicitly approved as safe, local absolute paths, payment evidence, payer details, transaction IDs, screenshots, private ledgers, cookies, tokens, or secrets.
+
+The support QR assets under `assets/support/` are intentionally public. Support payments remain separate from experiment revenue.
+
 ## Safety
 
 Do not log in to platforms, submit proposals, bid, post, comment, pay, change account settings, solve CAPTCHA, or request verification codes unless the owner explicitly asks for that specific action in the current conversation.

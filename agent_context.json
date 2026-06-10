@@ -1,15 +1,26 @@
 {
-  "schema_version": 4,
-  "updated_at": "2026-06-10 09:20 +08:00",
-  "freshness_note": "Updated from local slim source-of-truth files under PRIVATE_MONEY_GOAL_WORKSPACE. Network access to GitHub failed during refresh, so this is based on the local cached source project.",
+  "schema_version": 5,
+  "updated_at": "2026-06-10 10:05 +08:00",
+  "freshness_note": "Updated from private source-of-truth files and redacted for public release. Public snapshots intentionally omit buyer/user identifiers, account metrics, message details, local absolute paths, and transaction evidence.",
   "repo": {
     "name_en": "Agent Employment Guide",
-    "name_zh": "Agent 就业指南",
     "slug": "agent-employment-guide",
-    "path": "LOCAL_REPOSITORY_CLONE",
     "github_url": "https://github.com/caiyongkun-coder/agent-employment-guide",
     "project_started_at": "2026-06-05",
     "purpose": "Compact public progress and lessons record for the user's own Codex experiment to earn verified net revenue of 100 RMB or equivalent USD."
+  },
+  "privacy_policy": {
+    "public_snapshot_rule": "Publish only high-level status, date-level summaries, route classes, lessons, and boundaries.",
+    "do_not_publish": [
+      "buyer or lead identifiers",
+      "platform user IDs or handles tied to leads",
+      "account follower/content/message metrics",
+      "message, inbox, chat, comment, or DM contents",
+      "direct marketplace project IDs unless explicitly approved as safe to publish",
+      "local absolute paths",
+      "payment evidence, payer details, transaction IDs, screenshots, tax records, private ledgers, cookies, tokens, or secrets"
+    ],
+    "support_assets": "Public support QR assets are intentionally included; support payments remain separate from experiment revenue."
   },
   "positioning": {
     "experiment_owner": "the user",
@@ -19,14 +30,8 @@
     "humans_role": "watch progress and help only at real-world account, identity, payment, payout, tax, or verification gates"
   },
   "source_project": {
-    "materials_dir": "PRIVATE_MONEY_GOAL_WORKSPACE",
-    "read_first": "PRIVATE_MONEY_GOAL_WORKSPACE/README.md",
-    "ledger": "PRIVATE_MONEY_GOAL_WORKSPACE/revenue_ledger.csv",
-    "decision_queue": "PRIVATE_MONEY_GOAL_WORKSPACE/USER_DECISION_QUEUE.md",
-    "strategy": "PRIVATE_MONEY_GOAL_WORKSPACE/TASK_STRATEGY.md",
-    "boundary_rules": "PRIVATE_MONEY_GOAL_WORKSPACE/BOUNDARY_RULES.md",
-    "session_index": "PRIVATE_MONEY_GOAL_WORKSPACE/SESSION_LOG_INDEX.csv",
-    "records_index": "PRIVATE_MONEY_GOAL_WORKSPACE/RECORDS_INDEX.md"
+    "visibility": "private",
+    "public_source_policy": "The public repository does not expose private workspace paths. The private revenue ledger remains the source of truth."
   },
   "goal_status": {
     "goal": "Earn verified net revenue >= 100 RMB or equivalent USD.",
@@ -35,111 +40,102 @@
     "broke_zero": false,
     "complete": false,
     "orders": 0,
-    "real_buyer_inquiries": 0,
-    "source_of_truth": "PRIVATE_MONEY_GOAL_WORKSPACE/revenue_ledger.csv",
-    "completion_rule": "Only verified net revenue >= 100 RMB or equivalent USD with evidence_path in revenue_ledger.csv or explicit user confirmation completes the goal.",
+    "source_of_truth": "private revenue_ledger.csv",
+    "completion_rule": "Only verified net revenue >= 100 RMB or equivalent USD with private evidence or explicit user confirmation completes the goal.",
     "non_revenue_rule": "Tips, donations, support payments, views, favorites, posts, drafts, platform setup, inquiries without order/payment, and watch routes do not count."
   },
   "current_mode": {
-    "status": "active again by user request on 2026-06-09",
-    "decision_queue_status": "CLEAR as of USER_DECISION_QUEUE.md updated 2026-06-10",
+    "status": "active but privacy-gated and token-conservative",
+    "decision_queue_status": "no open public decision reported",
     "automation_boundary": "The daily progress automation is backup-only and must not advance acquisition or perform platform actions.",
-    "low_frequency_follow_up_policy": "Waiting leads may be checked only opportunistically during natural checkpoints, without polling loops or automation.",
-    "xhs_policy": "Xiaohongshu is skipped/backlog because the user said the active account has audience exposure and repeated scanning may create account risk."
+    "low_frequency_follow_up_policy": "Waiting leads may be checked only inside the private project at natural checkpoints, without polling loops or automation.",
+    "public_reporting_policy": "Waiting leads, account metrics, platform identifiers, and message details stay private."
   },
   "latest_updates": [
     {
-      "time": "2026-06-10 09:00 +08:00",
-      "summary": "A read-only Weibo Chrome checkpoint for waiting lead UID REDACTED_WEIBO_LEAD_ID showed a visible reply-like text and temporarily opened a reply decision; USER_DECISION_QUEUE.md later retracted it as a false-positive item and is CLEAR. No message, follow-up, troubleshooting, work, payment action, or revenue occurred.",
-      "revenue_effect": "none"
-    },
-    {
-      "time": "2026-06-10 08:58 +08:00",
-      "summary": "A read-only Douyin creator-center snapshot succeeded. It showed a small follower count, a small content count, and no unread buyer-message signal. Current Douyin tooling has no safe comment-detail read path, so no deeper browser inspection was done.",
+      "time": "2026-06-10",
+      "summary": "Public repository privacy audit and redaction removed over-specific platform, buyer, account, path, and message details from the current public snapshot.",
       "revenue_effect": "none"
     },
     {
       "time": "2026-06-10",
-      "summary": "A read-only LinkedIn inbox natural checkpoint returned setup incomplete while Patchright Chromium was still downloading. No inbox content was read and no retry loop or browser fallback was used.",
+      "summary": "Several private read-only checkpoints across inbound or low-frequency route classes produced no verified buyer, order, payment, or revenue signal.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-10",
-      "summary": "A read-only Bilibili inbound-comment check across the five latest videos found general jokes/discussion but no buyer-authored paid task, budget, concrete requirement, safe contact path, or revenue signal.",
-      "revenue_effect": "none"
-    },
-    {
-      "time": "2026-06-09 23:10 +08:00",
-      "summary": "Shutdown handoff recorded queue CLEAR, ledger 0 RMB, XHS skipped, the old heartbeat automation deleted, and Weibo UID REDACTED_WEIBO_LEAD_ID as a low-frequency waiting lead with no reply visible at that time.",
+      "time": "2026-06-09",
+      "summary": "The private working project was slimmed into compact read-first control files; heavy operational logs remained private.",
       "revenue_effect": "none"
     }
   ],
   "timeline_by_date": [
     {
       "date": "2026-06-05",
-      "summary": "Experiment started. Existing bank data warehouse / SQL interview-story material was packaged into a 109 RMB Xianyu service offer, a first listing went live, X/Twitter CTA material was prepared/sent, and revenue verification rules were created. Views appeared but no inquiry, order, or verified revenue occurred.",
+      "summary": "Experiment started. Existing knowledge-work material was packaged into a small paid-service offer and revenue verification rules were created. Exposure appeared but no inquiry, order, or verified revenue occurred.",
       "revenue_effect": "none",
       "lesson": "A live listing and early views are not revenue; evidence rules are needed before counting anything."
     },
     {
       "date": "2026-06-06",
-      "summary": "The experiment expanded into more Xianyu urgent-office offers. Passive views crossed no-inquiry thresholds and triggered pivot rules.",
+      "summary": "The experiment expanded into more small service offers. Passive views crossed no-inquiry thresholds and triggered pivot rules.",
       "revenue_effect": "none",
       "lesson": "When exposure does not become buyer conversation, stop spending most effort on listing-surface tweaks."
     },
     {
       "date": "2026-06-07",
-      "summary": "Active acquisition and task-marketplace screening broadened across GitHub/Boss/Algora/Opire, Tieba, ZBJ, EPWK, and other public routes. Several paths showed demand or exposure, but usable free participation was blocked by paid bids, membership, CAPTCHA, account timing, tags, or detail gates.",
+      "summary": "Active acquisition and task-marketplace screening broadened across multiple route classes. Several paths showed demand or exposure, but usable free participation was blocked by cost, account, verification, suitability, private-data, or platform-rule gates.",
       "revenue_effect": "none",
       "lesson": "Marketplace demand can be real but unusable when the free participation path is blocked."
     },
     {
       "date": "2026-06-08",
-      "summary": "PeoplePerHour, X/Twitter, and Freelancer produced possible write candidates, and some Freelancer routes gained local proposal/checklist assets. No marketplace write action, inquiry, order, payout, or revenue occurred.",
+      "summary": "Some candidate routes gained local preparation material. No marketplace write action, inquiry, order, payout, or revenue occurred.",
       "revenue_effect": "none",
       "lesson": "Prepared proposal routes still need explicit user confirmation for any platform write/account action."
     },
     {
       "date": "2026-06-09",
-      "summary": "The project was slimmed into compact read-first files. The prior 30-minute heartbeat automation was deleted. Low-frequency waiting-lead monitoring was clarified as opportunistic only. XHS was dropped/skipped by user instruction. Upwork and Freelancer were moved to sunk/backlog because of pre-revenue cost gates, despite earlier Freelancer candidates.",
+      "summary": "The project shifted to context control and stricter decision gates. Heavy logs were archived privately, frequent automation was deleted, and low-frequency monitoring was limited to opportunistic read-only checks.",
       "revenue_effect": "none",
       "lesson": "Context control and cost gates matter; a candidate is not actionable if reaching the buyer requires unacceptable pre-revenue spend or account risk."
     },
     {
       "date": "2026-06-10",
-      "summary": "Read-only Bilibili, LinkedIn, Douyin, and Weibo natural checkpoints produced no verified buyer/order/payment signal. USER_DECISION_QUEUE.md is CLEAR and revenue_ledger.csv still records 0 RMB.",
+      "summary": "Private read-only checks produced no verified buyer/order/payment signal. The public repository was redacted to remove over-specific operational and privacy-sensitive details.",
       "revenue_effect": "none",
-      "lesson": "Low-frequency checks are useful for not missing replies, but they must not become polling or replace fresh no-upfront-cost discovery."
+      "lesson": "Public progress snapshots must be privacy-reviewed before publishing."
     }
   ],
   "current_bottleneck": {
     "summary": "No verified revenue and no active order. Passive/inbound checks have not produced a screened buyer with budget and safe payment path.",
-    "decision_lock": "No OPEN user decision in USER_DECISION_QUEUE.md.",
-    "sunk_or_backlog_platforms": [
-      "Upwork: sunk/backlog because Connects or proposal costs may be required before revenue.",
-      "Freelancer: sunk/backlog because free bids are limited and minimum balance/payment gates may apply.",
-      "Xiaohongshu: skipped/backlog by user account-risk instruction."
+    "decision_lock": "No open public decision reported.",
+    "route_boundaries": [
+      "Cost-gated marketplaces stay backlog unless the user explicitly reopens their pre-revenue cost gates.",
+      "Account-risk routes stay backlog unless the user explicitly reopens them.",
+      "Waiting leads are private operational state and should not be identified in public snapshots."
     ]
   },
   "next_safe_plan": [
     "Do not use this public-repo automation to advance acquisition.",
-    "In the money-goal project only, when no OPEN decision exists, continue one small read-only no-upfront-cost discovery step.",
+    "In the private money-goal project only, when no open decision gate exists, continue one small read-only no-upfront-cost discovery step.",
     "Avoid polling loops, countdowns, background waits, broad repeated scans, or generic offer-asset preparation before a concrete buyer demand appears.",
     "Stop at login, CAPTCHA, KYC, SMS/QR, account, payment, payout, tax, cost, proposal, comment, DM, upload, or any other write/action gate.",
-    "If payment or payout appears, verify revenue in revenue_ledger.csv before counting progress."
+    "If payment or payout appears, verify revenue in the private ledger before counting progress.",
+    "Before publishing progress, scan and redact identifiers, account metrics, message details, local paths, and transaction evidence."
   ],
   "hard_boundaries": [
     "Do not count views, favorites, posts, proposal drafts, prepared materials, platform setup, tips, donations, support payments, watch routes, or inquiries without order/payment as experiment revenue.",
     "Do not solve CAPTCHA or ask for verification codes inside an automated maintenance task.",
     "Do not pay for bids, membership, promotion, deposit, guarantee, platform credits, or Connects without explicit user confirmation.",
     "Do not alter payment, tax, profile, contact, or account settings without explicit user confirmation.",
-    "Do not perform platform write actions from the daily progress automation."
+    "Do not perform platform write actions from the daily progress automation.",
+    "Do not publish private identifiers or operational details in the public repository."
   ],
   "file_policy": {
-    "PROGRESS.md": "English compact human progress page.",
-    "PROGRESS.zh-CN.md": "Chinese compact human progress page.",
-    "agent_context.json": "Compact machine-readable state and lessons.",
-    "revenue_ledger.csv": "Only revenue source of truth in the private money-goal project."
+    "PROGRESS.md": "English compact privacy-safe human progress page.",
+    "PROGRESS.zh-CN.md": "Chinese compact privacy-safe human progress page.",
+    "agent_context.json": "Compact privacy-safe machine-readable state and lessons.",
+    "private_revenue_ledger": "Only revenue source of truth in the private money-goal project; not published."
   },
   "freshness_protocol": [
     "Before answering latest progress, current status, broke-zero status, or completion, refresh the public repository with git fetch/pull when network is available.",

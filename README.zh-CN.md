@@ -1,11 +1,13 @@
-# agent就业指南
+# Agent Employment Guide
 
 [English](README.md) | 中文说明
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Skill](https://img.shields.io/badge/SKILL.md-compatible-green.svg)](SKILL.md)
 
-Agent Employment Guide / agent就业指南 是一个中英双语、机器可读的进度和经验仓库，用来记录一个正在进行的实验：用户自己的 Codex 会话，能不能赚到已验证净收入 100 元人民币，或等值美元？
+Agent Employment Guide 是一个中英双语、机器可读的进度和经验仓库，用来记录一个正在进行的实验：
+
+用户自己的 Codex 会话，能不能赚到已验证净收入 100 元人民币，或等值美元？
 
 实验开始于 2026-06-05。当前答案仍然是：还没有。
 
@@ -18,10 +20,8 @@ Agent Employment Guide / agent就业指南 是一个中英双语、机器可读�
 | 是否破零 | 否 |
 | 目标是否完成 | 否 |
 | 订单数 | 0 |
-| 真实买家询盘 | 0 |
-| 收入账本 | `PRIVATE_MONEY_GOAL_WORKSPACE\revenue_ledger.csv` |
-| 当前最强路线 | a cost-gated marketplace candidate，仅在用户明确确认 Freelancer 写操作/账号操作后使用 |
-| 备选路线 | a cost-gated marketplace backup candidate，仅作为已验证公开页面的备选 |
+| 收入事实来源 | 私有收入账本 |
+| 当前路线状态 | 没有活跃订单；成本门槛和账号风险路线保持 backlog |
 
 只计算已经验证的净收入。浏览量、收藏、发帖、proposal 草稿、样例资产、平台设置、打赏、捐赠、支持付款、没有订单或付款的询盘，都不算实验收入。
 
@@ -31,13 +31,39 @@ Agent Employment Guide / agent就业指南 是一个中英双语、机器可读�
 
 其他人和其他 agent 默认只是围观者和学习者。他们可以复用这里的经验去做自己的独立实验，但不参与用户个人的 100 元收入目标。
 
+## 隐私边界
+
+这是公开仓库。进度快照默认不公开：
+
+- 买家、线索、用户或账号标识；
+- 平台账号指标；
+- 消息、收件箱、聊天、私信或评论内容；
+- 未经明确批准可公开的市场项目编号；
+- 本地绝对路径；
+- 支付证据、付款人信息、交易号、截图、私有账本、cookie、token 和密钥。
+
+`assets/support/` 下的公开支持收款码是主动保留的支持入口。支持付款与赚钱实验分开统计，不计入 100 元目标。
+
 ## 快速开始
 
-给人类：阅读 [PROGRESS.zh-CN.md](PROGRESS.zh-CN.md) 或 [PROGRESS.md](PROGRESS.md)，查看已验证收入、是否破零和最新有效进展。把这里当成围观页，不要当成策略审批队列。
+给人类：
 
-给 agent：先读 [AGENTS.md](AGENTS.md)，如运行环境支持再加载 [SKILL.md](SKILL.md)，然后读取 [agent_context.json](agent_context.json) 获取机器可读状态、经验、边界和下一步安全计划。
+1. 阅读 [PROGRESS.zh-CN.md](PROGRESS.zh-CN.md) 或 [PROGRESS.md](PROGRESS.md)。
+2. 查看已验证收入、是否破零和最新有效进展。
+3. 把这里当成围观页，不要当成策略审批队列。
 
-给支持/打赏：阅读 [SUPPORT.md](SUPPORT.md)。支持付款不计入 100 元赚钱实验。
+给 agent：
+
+1. 先读 [AGENTS.md](AGENTS.md)。
+2. 如果运行环境支持，再加载 [SKILL.md](SKILL.md)。
+3. 读取 [agent_context.json](agent_context.json) 获取机器可读状态、经验、边界、隐私策略和下一步安全计划。
+4. 使用匹配用户语言的进度文件。
+
+给支持/打赏：
+
+1. 阅读 [SUPPORT.md](SUPPORT.md)。
+2. 使用 [assets/support](assets/support) 下的公开二维码资源。
+3. 支持付款不计入 100 元赚钱实验。
 
 ## 人类角色
 
@@ -53,6 +79,7 @@ Agent Employment Guide / agent就业指南 是一个中英双语、机器可读�
 - 准备好的样例资产有助于成交，但不能算收入。
 - 新鲜的买家主动需求，比反复刷新旧页面更值得投入。
 - 任意市场或社交平台写操作，都必须在操作当时得到用户明确确认。
+- 公开进度更新在发布前必须做隐私复核。
 
 ## 文件结构
 
@@ -60,7 +87,7 @@ Agent Employment Guide / agent就业指南 是一个中英双语、机器可读�
 | --- | --- |
 | `SKILL.md` | 根目录 AgentSkills 兼容 skill。 |
 | `AGENTS.md` | 给所有 agent 读取的通用入口说明。 |
-| `agent_context.json` | 机器可读状态、经验、边界和策略。 |
+| `agent_context.json` | 机器可读、已脱敏的状态、经验、边界和策略。 |
 | `PROGRESS.md` | 英文进度/围观页。 |
 | `PROGRESS.zh-CN.md` | 中文进度/围观页。 |
 | `README.md` | 英文仓库入口。 |
@@ -69,27 +96,9 @@ Agent Employment Guide / agent就业指南 是一个中英双语、机器可读�
 | `assets/support/` | 公开支持收款码资源。 |
 | `LICENSE` | Apache License 2.0。 |
 
-## 支持作者
-
-支持和打赏与赚钱实验分开统计，不计入 100 元目标。不要把付款人姓名、账号标识、完整交易号、支付截图、税务记录或私有对账文件写进这个公开仓库。
-
 ## 事实来源
 
-详细本地/私有实验材料在：
-
-`PRIVATE_MONEY_GOAL_WORKSPACE`
-
-关键源文件：
-
-- `LATEST_GOAL_HANDOFF.md`
-- `revenue_ledger.csv`
-- `action_log.md`
-- `pivot_decision_log.csv`
-- `xianyu_72h_metrics.csv`
-- `warm_outreach_metrics.csv`
-- `next_heartbeat_minimal_runbook.md`
-
-公开仓库要保持短、清楚、可读：顶层状态、有效进展、当前卡点、经验教训、支持边界和下一步安全计划即可。
+详细实验材料和收入账本是私有的。公开仓库要保持短、清楚、可读：只记录高层状态、有效进展、当前卡点、经验教训、支持边界、隐私规则和下一步安全计划。
 
 ## 开源协议
 
