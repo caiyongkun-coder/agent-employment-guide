@@ -2,13 +2,13 @@
 
 [中文进度页](PROGRESS.zh-CN.md) | English
 
-Updated: 2026-06-09 10:15 +08:00
+Updated: 2026-06-10 09:20 +08:00
 
 This page is for humans to watch progress. It is not a strategy review, approval queue, or intervention checklist.
 
 ## Scoreboard
 
-- Project: Agent Employment Guide / agent就业指南
+- Project: Agent Employment Guide / Agent 就业指南
 - Experiment started: 2026-06-05
 - Goal: verified net revenue >= 100 RMB or equivalent USD
 - Verified net revenue: 0 RMB
@@ -18,21 +18,21 @@ This page is for humans to watch progress. It is not a strategy review, approval
 - Completion status: Not complete
 - Source ledger: `PRIVATE_MONEY_GOAL_WORKSPACE\revenue_ledger.csv`
 
-Only verified net revenue counts. Views, favorites, posts, bids, proposal drafts, prepared samples, platform setup, tips, donations, support payments, and inquiries without order or payment do not count.
+Only verified net revenue counts. The goal is complete only when `revenue_ledger.csv` records verified net revenue >= 100 RMB or equivalent USD with an `evidence_path`, or when the user explicitly confirms equivalent evidence. Views, favorites, posts, proposal drafts, prepared samples, platform setup, tips, donations, support payments, watch routes, and inquiries without order or payment do not count.
 
 ## Latest Meaningful Progress
 
-- 2026-06-09 10:12 +08:00: a cost-gated marketplace backup candidate was resolved from the public API to a working direct page. It is active, fixed `AUD 30-250`, payment-method verified on the public page, and now a verified public-page backup candidate. It stays below `REDACTED_MARKETPLACE_PROJECT_ID`; no bid preview, login, proposal, message, upload, inquiry, order, payment, payout, or revenue occurred.
-- 2026-06-09 10:05 +08:00: X/Twitter read-only buyer-signal searches for paid Excel/PPT/data-entry help found no clean fixed-scope fixed-cash buyer route. No X write action occurred.
-- 2026-06-09 10:00 +08:00: a fresh Freelancer Office/Data public API screen found no route stronger than `REDACTED_MARKETPLACE_PROJECT_ID`.
-- 2026-06-09 09:54 +08:00: a cost-gated marketplace candidate still returned HTTP 200 and matched `Data Entry for Course Notes`, `Open for bidding`, `Paid on delivery`, `Payment method verified`, project ID `40485271`, and 24 proposals. Public API still showed active/open, fixed `USD 250-750`, 24 bids, and average bid about `USD 373.3333`.
-- 2026-06-09 08:51 +08:00: local capability verification found no reliable PSD/AI source-file toolchain, so a watch-only marketplace design candidate stayed watch-only despite acceptable budget.
+- 2026-06-10 09:00 +08:00: a read-only Weibo checkpoint for waiting lead UID `REDACTED_WEIBO_LEAD_ID` briefly surfaced a reply-like signal, but `USER_DECISION_QUEUE.md` later retracted the item as a false positive and is now `CLEAR`. No message, follow-up, troubleshooting, work, payment action, or revenue occurred.
+- 2026-06-10 08:58 +08:00: a read-only Douyin creator-center snapshot succeeded. It showed a small follower count, a small content count, and no unread buyer-message signal. The available tooling still has no safe comment-detail read path, so no deeper browser inspection was done.
+- 2026-06-10: a read-only LinkedIn inbox checkpoint returned setup incomplete while Patchright Chromium was still downloading. No inbox content was read, and no retry loop or browser fallback was used.
+- 2026-06-10: a read-only Bilibili inbound-comment check across the five latest videos found jokes/general discussion about agents and Codex, but no buyer-authored paid task, budget, concrete requirement, safe contact path, or revenue signal.
+- 2026-06-09 23:10 +08:00: shutdown handoff recorded queue `CLEAR`, ledger 0 RMB, XHS skipped by user instruction, the old heartbeat automation deleted, and Weibo UID `REDACTED_WEIBO_LEAD_ID` as a low-frequency waiting lead with no reply visible at that time.
 
 ## Compressed Timeline
 
 ### 2026-06-05
 
-The experiment began. The first path packaged an existing bank data warehouse / SQL interview-story asset into a 109 RMB Xianyu service offer so the net amount should stay above 100 RMB after the observed fee. A first Xianyu listing was published, X/Twitter CTA posts were prepared/sent, and revenue verification rules were created. The listing gained views but produced 0 inquiries, 0 orders, and 0 verified revenue.
+The experiment began. The first path packaged an existing bank data warehouse / SQL interview-story asset into a 109 RMB Xianyu service offer. A first Xianyu listing was published, X/Twitter CTA material was prepared/sent, and revenue verification rules were created. The listing gained views but produced 0 inquiries, 0 orders, and 0 verified revenue.
 
 ### 2026-06-06
 
@@ -40,27 +40,31 @@ The work expanded into multiple Xianyu offers, including urgent PPT/Excel/Word h
 
 ### 2026-06-07
 
-The experiment broadened into active acquisition and task marketplaces. A low-price 19 RMB diagnostic Xianyu funnel later appeared deleted/unavailable and cannot complete the 100 RMB goal alone. GitHub/Boss/Algora/Opire screens found no clean fixed-cash, low-competition task. Baidu Tieba and public buyer-intent searches were low-yield or unstable. ZBJ was live but had no buyer/order signal. EPWK showed demand but usable paths were blocked by paid bid chances, membership/skill tags, CAPTCHA, account timing, or detail gates. Revenue stayed 0 RMB.
+The experiment broadened into active acquisition and task marketplaces. GitHub/Boss/Algora/Opire screens found no clean fixed-cash, low-competition task. Baidu Tieba and public buyer-intent searches were low-yield or unstable. ZBJ was live but had no buyer/order signal. EPWK showed demand, but usable paths were blocked by paid bid chances, membership/skill tags, CAPTCHA, account timing, or detail gates. Revenue stayed 0 RMB.
 
 ### 2026-06-08
 
-Old surfaces continued producing exposure but no conversion. PeoplePerHour, X/Twitter, and Freelancer produced possible write candidates. an earlier marketplace candidate and `REDACTED_MARKETPLACE_PROJECT_ID` became prepared routes with execution checklists and local proposal assets, but no marketplace write action, login, bid, message, upload, inquiry, order, payout, or revenue occurred.
+Old surfaces continued producing exposure but no conversion. PeoplePerHour, X/Twitter, and Freelancer produced possible write candidates, and some Freelancer routes gained local proposal/checklist assets. No marketplace write action, login, bid, message, upload, inquiry, order, payout, or revenue occurred.
 
 ### 2026-06-09
 
-The active acquisition focus shifted to a stronger Freelancer stack. `REDACTED_MARKETPLACE_PROJECT_ID` is first because it remains active/open, has a larger fixed budget, fits Office/data capability, and has direct-page paid/payment-verification evidence. `REDACTED_MARKETPLACE_PROJECT_ID` is now a verified public-page backup. Upwork `REDACTED_MARKETPLACE_PROJECT_ID` and X `@takkobel` remain confirmation-gated. `REDACTED_MARKETPLACE_PROJECT_ID` remains watch-only because of PSD/AI source-file requirements. Revenue stayed 0 RMB.
+The project was slimmed into compact read-first files. The prior 30-minute heartbeat automation was deleted. Low-frequency waiting-lead monitoring was clarified as opportunistic only, without polling or automation. XHS/Xiaohongshu was dropped and skipped by user instruction because the active account has audience exposure and repeated scanning may create account risk. Upwork and Freelancer were moved to sunk/backlog because of pre-revenue cost gates, even though earlier Freelancer candidates existed. Revenue stayed 0 RMB.
+
+### 2026-06-10
+
+Read-only Bilibili, LinkedIn, Douyin, and Weibo natural checkpoints produced no verified buyer/order/payment signal. `USER_DECISION_QUEUE.md` is `CLEAR`, but `revenue_ledger.csv` still records 0 RMB, so the goal is not complete.
 
 ## Current Bottleneck
 
-Passive surfaces have exposure but no buyer conversation. The strongest current action still requires explicit user confirmation for a platform write/account action:
+There is no active order and no verified revenue. Passive and inbound checks have not produced a screened buyer with a concrete paid task, budget, safe contact path, and safe payment route.
 
-- Primary route: a cost-gated marketplace candidate, with immediate direct-page recheck before any submit action.
-- Backup: a cost-gated marketplace backup candidate, only after explicit Freelancer confirmation, immediate direct-page recheck, and public-info-only social lead research boundaries.
-- Backup: Upwork `REDACTED_MARKETPLACE_PROJECT_ID`, only after explicit Upwork login/proposal confirmation.
-- Social lead: X `@takkobel`, only after explicit X reply confirmation and only with a safe on-platform/escrow payment path.
-- Watch-only design route: a watch-only marketplace design candidate, blocked unless truthful PSD/AI source-file delivery or buyer acceptance of editable alternatives is confirmed before contract.
+Current route boundaries:
 
-If no write confirmation is available, the next useful action should be fresh single-platform read-only/free-path discovery, not another old Xianyu-only monitoring cycle.
+- Upwork: sunk/backlog because Connects or proposal costs may be required before revenue.
+- Freelancer: sunk/backlog because free bids are limited and minimum balance/payment gates may apply.
+- XHS/Xiaohongshu: skipped/backlog by user account-risk instruction unless the user explicitly reopens it.
+- Weibo UID `REDACTED_WEIBO_LEAD_ID`: low-frequency waiting lead only; no follow-up or work without a fresh preview and explicit user confirmation.
+- Bilibili, Douyin, LinkedIn, V2EX/RSS/public web: only eligible for small read-only checks when the money-goal project is active and no OPEN decision blocks it.
 
 ## Human Assistance Needed
 
@@ -68,46 +72,29 @@ No human action is needed just to watch progress. Human help may be needed only 
 
 Humans do not need to approve normal strategy or everyday next steps on this page.
 
-## What Has Been Tried
-
-- Xianyu 109 RMB bank data warehouse / SQL interview-story offer
-- Xianyu 109 RMB SQL resume rewrite offer
-- Xianyu 129 RMB urgent PPT/Excel/Word help offers
-- Xianyu 19 RMB diagnostic funnel, which cannot complete the 100 RMB goal alone
-- X/Twitter public posts, replies, and buyer-intent searches
-- Baidu Tieba public replies/posts around Excel/PPT help
-- ZBJ service storefront with 129/199/299 RMB packages
-- EPWK task screening and bid-path checks
-- GitHub, Boss, Algora, Opire, and V2EX bounty/task screening
-- PeoplePerHour read-only screening and local proposal asset prep
-- Freelancer read-only screening, proposal previews, user-confirmed execution checklists, and local dummy samples
-- Upwork read-only screening and a confirmation-gated proposal backup
-
 ## Lessons So Far
 
-- Exposure is not conversion. Xianyu listings produced views but no buyer inquiry or order.
-- A listing or storefront being live is not revenue.
-- Marketplace demand can be real but blocked by paid bid chances, membership, identity, CAPTCHA, missing skill tags, account timing, video-call requirements, source-file requirements, or private-data risk.
-- Public search has low yield when repeated with broad urgent-PPT/Excel keywords.
-- Prepared assets should support conversion after a buyer appears; they must not be counted as income.
-- The next high-leverage work should start from fresh buyer-initiated demand or a clear free-path marketplace task, not repeated old-page monitoring.
+- Exposure is not conversion. Listings and posts produced views or discussion, but no verified revenue.
+- A storefront, post, proposal draft, or prepared asset is not revenue.
+- Marketplace demand can be real but blocked by paid bid chances, membership, identity, CAPTCHA, account timing, video-call requirements, source-file requirements, private-data risk, or pre-revenue platform costs.
+- Repeated broad urgent-PPT/Excel searches have low yield.
+- Low-frequency follow-up checks should happen only at natural checkpoints; they must not become polling loops.
+- Context should stay compact: keep date-level summaries and source pointers instead of long platform diaries.
 
 ## Next Safe Plan
 
-1. Keep existing Xianyu, X/Twitter, Tieba, ZBJ, and EPWK surfaces as low-frequency monitors only.
-2. If the user explicitly confirms a cost-gated marketplace candidate, immediately recheck the direct page and use the matching prepared route rules before any submit button.
-3. Treat a cost-gated marketplace backup candidate as backup only after explicit confirmation and public-info-only boundaries.
-4. Use Upwork `REDACTED_MARKETPLACE_PROJECT_ID` only after explicit Upwork login/proposal confirmation.
-5. Use X `@takkobel` only after explicit X reply confirmation and only with safe scope, redacted data, and an on-platform or escrow payment path.
-6. Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit gates, video-call requirements, private data, or unsupported source-file requirements.
-7. If payment or payout appears, verify evidence before updating the ledger.
+1. Keep this public-repo automation backup-only; it must not advance acquisition or interact with platforms.
+2. In the money-goal project only, when `USER_DECISION_QUEUE.md` has no OPEN decision, continue one small read-only no-upfront-cost discovery step.
+3. Do not prepare generic local offer assets before a concrete buyer demand appears.
+4. Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit/Connects gates, video-call requirements, private data, unsupported source-file requirements, or any write action.
+5. If payment or payout appears, verify evidence in `revenue_ledger.csv` before counting progress.
 
 ## Source Files
 
-- `PRIVATE_MONEY_GOAL_WORKSPACE\LATEST_GOAL_HANDOFF.md`
+- `PRIVATE_MONEY_GOAL_WORKSPACE\README.md`
 - `PRIVATE_MONEY_GOAL_WORKSPACE\revenue_ledger.csv`
-- `PRIVATE_MONEY_GOAL_WORKSPACE\action_log.md`
-- `PRIVATE_MONEY_GOAL_WORKSPACE\pivot_decision_log.csv`
-- `PRIVATE_MONEY_GOAL_WORKSPACE\xianyu_72h_metrics.csv`
-- `PRIVATE_MONEY_GOAL_WORKSPACE\warm_outreach_metrics.csv`
-- `PRIVATE_MONEY_GOAL_WORKSPACE\next_heartbeat_minimal_runbook.md`
+- `PRIVATE_MONEY_GOAL_WORKSPACE\USER_DECISION_QUEUE.md`
+- `PRIVATE_MONEY_GOAL_WORKSPACE\TASK_STRATEGY.md`
+- `PRIVATE_MONEY_GOAL_WORKSPACE\BOUNDARY_RULES.md`
+- `PRIVATE_MONEY_GOAL_WORKSPACE\SESSION_LOG_INDEX.csv`
+- `PRIVATE_MONEY_GOAL_WORKSPACE\RECORDS_INDEX.md`

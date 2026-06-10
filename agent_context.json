@@ -1,20 +1,15 @@
 {
-  "schema_version": 3,
-  "updated_at": "2026-06-09 10:15 +08:00",
-  "freshness_note": "Updated from local source-of-truth files under PRIVATE_MONEY_GOAL_WORKSPACE. Revenue remains sourced only from revenue_ledger.csv.",
+  "schema_version": 4,
+  "updated_at": "2026-06-10 09:20 +08:00",
+  "freshness_note": "Updated from local slim source-of-truth files under PRIVATE_MONEY_GOAL_WORKSPACE. Network access to GitHub failed during refresh, so this is based on the local cached source project.",
   "repo": {
     "name_en": "Agent Employment Guide",
-    "name_zh": "agent就业指南",
+    "name_zh": "Agent 就业指南",
     "slug": "agent-employment-guide",
     "path": "LOCAL_REPOSITORY_CLONE",
     "github_url": "https://github.com/caiyongkun-coder/agent-employment-guide",
     "project_started_at": "2026-06-05",
-    "purpose": "Compact public progress and lessons record for the user's own long-running Codex experiment to earn verified net revenue of 100 RMB or equivalent USD.",
-    "not_this": [
-      "not an external multi-agent relay project",
-      "not a public approval workflow",
-      "not a place where humans review or approve ordinary agent strategy"
-    ]
+    "purpose": "Compact public progress and lessons record for the user's own Codex experiment to earn verified net revenue of 100 RMB or equivalent USD."
   },
   "positioning": {
     "experiment_owner": "the user",
@@ -24,15 +19,14 @@
     "humans_role": "watch progress and help only at real-world account, identity, payment, payout, tax, or verification gates"
   },
   "source_project": {
-    "workspace": "PRIVATE_CODEX_WORKSPACE",
     "materials_dir": "PRIVATE_MONEY_GOAL_WORKSPACE",
-    "primary_handoff": "PRIVATE_MONEY_GOAL_WORKSPACE/LATEST_GOAL_HANDOFF.md",
+    "read_first": "PRIVATE_MONEY_GOAL_WORKSPACE/README.md",
     "ledger": "PRIVATE_MONEY_GOAL_WORKSPACE/revenue_ledger.csv",
-    "action_log": "PRIVATE_MONEY_GOAL_WORKSPACE/action_log.md",
-    "pivot_decision_log": "PRIVATE_MONEY_GOAL_WORKSPACE/pivot_decision_log.csv",
-    "xianyu_metrics": "PRIVATE_MONEY_GOAL_WORKSPACE/xianyu_72h_metrics.csv",
-    "warm_outreach_metrics": "PRIVATE_MONEY_GOAL_WORKSPACE/warm_outreach_metrics.csv",
-    "runbook": "PRIVATE_MONEY_GOAL_WORKSPACE/next_heartbeat_minimal_runbook.md"
+    "decision_queue": "PRIVATE_MONEY_GOAL_WORKSPACE/USER_DECISION_QUEUE.md",
+    "strategy": "PRIVATE_MONEY_GOAL_WORKSPACE/TASK_STRATEGY.md",
+    "boundary_rules": "PRIVATE_MONEY_GOAL_WORKSPACE/BOUNDARY_RULES.md",
+    "session_index": "PRIVATE_MONEY_GOAL_WORKSPACE/SESSION_LOG_INDEX.csv",
+    "records_index": "PRIVATE_MONEY_GOAL_WORKSPACE/RECORDS_INDEX.md"
   },
   "goal_status": {
     "goal": "Earn verified net revenue >= 100 RMB or equivalent USD.",
@@ -43,191 +37,113 @@
     "orders": 0,
     "real_buyer_inquiries": 0,
     "source_of_truth": "PRIVATE_MONEY_GOAL_WORKSPACE/revenue_ledger.csv",
-    "completion_rule": "Only verified net revenue >= 100 RMB or equivalent USD with evidence_path or explicit user confirmation completes the goal.",
-    "zero_break_rule": "Breaking zero requires confirmed net revenue > 0."
+    "completion_rule": "Only verified net revenue >= 100 RMB or equivalent USD with evidence_path in revenue_ledger.csv or explicit user confirmation completes the goal.",
+    "non_revenue_rule": "Tips, donations, support payments, views, favorites, posts, drafts, platform setup, inquiries without order/payment, and watch routes do not count."
+  },
+  "current_mode": {
+    "status": "active again by user request on 2026-06-09",
+    "decision_queue_status": "CLEAR as of USER_DECISION_QUEUE.md updated 2026-06-10",
+    "automation_boundary": "The daily progress automation is backup-only and must not advance acquisition or perform platform actions.",
+    "low_frequency_follow_up_policy": "Waiting leads may be checked only opportunistically during natural checkpoints, without polling loops or automation.",
+    "xhs_policy": "Xiaohongshu is skipped/backlog because the user said the active account has audience exposure and repeated scanning may create account risk."
   },
   "latest_updates": [
     {
-      "time": "2026-06-09 10:12 +08:00",
-      "summary": "Freelancer REDACTED_MARKETPLACE_PROJECT_ID direct public page was resolved and verified as active/open, paid on delivery, payment-method verified, fixed AUD 30-250, 13 bids. It is a backup candidate below REDACTED_MARKETPLACE_PROJECT_ID; no bid preview or write action occurred.",
+      "time": "2026-06-10 09:00 +08:00",
+      "summary": "A read-only Weibo Chrome checkpoint for waiting lead UID REDACTED_WEIBO_LEAD_ID showed a visible reply-like text and temporarily opened a reply decision; USER_DECISION_QUEUE.md later retracted it as a false-positive item and is CLEAR. No message, follow-up, troubleshooting, work, payment action, or revenue occurred.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-09 10:05 +08:00",
-      "summary": "Read-only X/Twitter searches for paid Excel/PPT/data-entry help found no clean fixed-scope fixed-cash buyer route. No X write action occurred.",
+      "time": "2026-06-10 08:58 +08:00",
+      "summary": "A read-only Douyin creator-center snapshot succeeded. It showed a small follower count, a small content count, and no unread buyer-message signal. Current Douyin tooling has no safe comment-detail read path, so no deeper browser inspection was done.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-09 10:00 +08:00",
-      "summary": "Fresh Freelancer Office/Data public API screen found no route stronger than REDACTED_MARKETPLACE_PROJECT_ID. REDACTED_MARKETPLACE_PROJECT_ID was initially watch-only before the 10:12 direct-page resolution.",
+      "time": "2026-06-10",
+      "summary": "A read-only LinkedIn inbox natural checkpoint returned setup incomplete while Patchright Chromium was still downloading. No inbox content was read and no retry loop or browser fallback was used.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-09 09:54 +08:00",
-      "summary": "Freelancer REDACTED_MARKETPLACE_PROJECT_ID direct/API recheck kept it first: HTTP 200, Data Entry for Course Notes, Open for bidding, Paid on delivery, Payment method verified, fixed USD 250-750, 24 bids.",
+      "time": "2026-06-10",
+      "summary": "A read-only Bilibili inbound-comment check across the five latest videos found general jokes/discussion but no buyer-authored paid task, budget, concrete requirement, safe contact path, or revenue signal.",
       "revenue_effect": "none"
     },
     {
-      "time": "2026-06-09 08:51 +08:00",
-      "summary": "Local capability verification found no reliable PSD/AI source-file toolchain, keeping Freelancer REDACTED_MARKETPLACE_PROJECT_ID watch-only despite acceptable budget.",
+      "time": "2026-06-09 23:10 +08:00",
+      "summary": "Shutdown handoff recorded queue CLEAR, ledger 0 RMB, XHS skipped, the old heartbeat automation deleted, and Weibo UID REDACTED_WEIBO_LEAD_ID as a low-frequency waiting lead with no reply visible at that time.",
       "revenue_effect": "none"
     }
   ],
   "timeline_by_date": [
     {
       "date": "2026-06-05",
-      "summary": "Experiment started. Packaged existing bank data warehouse / SQL interview-story material into a 109 RMB Xianyu service offer, published the first listing, prepared/sent X/Twitter CTA material, and created revenue verification rules. Views appeared but no inquiry, order, or verified revenue occurred.",
+      "summary": "Experiment started. Existing bank data warehouse / SQL interview-story material was packaged into a 109 RMB Xianyu service offer, a first listing went live, X/Twitter CTA material was prepared/sent, and revenue verification rules were created. Views appeared but no inquiry, order, or verified revenue occurred.",
       "revenue_effect": "none",
       "lesson": "A live listing and early views are not revenue; evidence rules are needed before counting anything."
     },
     {
       "date": "2026-06-06",
-      "summary": "Expanded from one Xianyu listing into multiple urgent-office offers, improved night-rush visuals, added a morning/same-day urgent offer, and tightened X/Twitter outreach and conversion material. No-inquiry thresholds triggered pivot rules.",
+      "summary": "The experiment expanded into more Xianyu urgent-office offers. Passive views crossed no-inquiry thresholds and triggered pivot rules.",
       "revenue_effect": "none",
       "lesson": "When exposure does not become buyer conversation, stop spending most effort on listing-surface tweaks."
     },
     {
       "date": "2026-06-07",
-      "summary": "Broadened into active acquisition and task marketplaces. The 19 RMB diagnostic Xianyu funnel appeared deleted/unavailable and cannot complete the goal alone. GitHub/Boss/Algora/Opire screens found no clean fixed-cash low-competition task. Tieba and public buyer-intent searches were low-yield or unstable. ZBJ service was published but no buyer/order appeared. EPWK showed demand but was blocked by paid bid chances, membership/skill tags, CAPTCHA, account timing, or detail gates.",
+      "summary": "Active acquisition and task-marketplace screening broadened across GitHub/Boss/Algora/Opire, Tieba, ZBJ, EPWK, and other public routes. Several paths showed demand or exposure, but usable free participation was blocked by paid bids, membership, CAPTCHA, account timing, tags, or detail gates.",
       "revenue_effect": "none",
       "lesson": "Marketplace demand can be real but unusable when the free participation path is blocked."
     },
     {
       "date": "2026-06-08",
-      "summary": "Old surfaces kept producing exposure but no conversion. PeoplePerHour, X/Twitter, and Freelancer produced possible write candidates. Freelancer REDACTED_MARKETPLACE_PROJECT_ID and REDACTED_MARKETPLACE_PROJECT_ID became prepared routes with execution checklists and local proposal assets, but no marketplace write action, login, bid, message, upload, inquiry, order, payout, or revenue occurred.",
+      "summary": "PeoplePerHour, X/Twitter, and Freelancer produced possible write candidates, and some Freelancer routes gained local proposal/checklist assets. No marketplace write action, inquiry, order, payout, or revenue occurred.",
       "revenue_effect": "none",
       "lesson": "Prepared proposal routes still need explicit user confirmation for any platform write/account action."
     },
     {
       "date": "2026-06-09",
-      "summary": "Active acquisition shifted to a stronger Freelancer stack. REDACTED_MARKETPLACE_PROJECT_ID is first because it remains active/open, has a larger fixed budget, fits Office/data capability, and has direct-page paid/payment-verification evidence. REDACTED_MARKETPLACE_PROJECT_ID is now a verified public-page backup. Upwork REDACTED_MARKETPLACE_PROJECT_ID and X @takkobel remain confirmation-gated. REDACTED_MARKETPLACE_PROJECT_ID remains watch-only due PSD/AI source-file requirements.",
+      "summary": "The project was slimmed into compact read-first files. The prior 30-minute heartbeat automation was deleted. Low-frequency waiting-lead monitoring was clarified as opportunistic only. XHS was dropped/skipped by user instruction. Upwork and Freelancer were moved to sunk/backlog because of pre-revenue cost gates, despite earlier Freelancer candidates.",
       "revenue_effect": "none",
-      "lesson": "The best current routes are not revenue until a confirmed order/payment is verified in the ledger."
+      "lesson": "Context control and cost gates matter; a candidate is not actionable if reaching the buyer requires unacceptable pre-revenue spend or account risk."
+    },
+    {
+      "date": "2026-06-10",
+      "summary": "Read-only Bilibili, LinkedIn, Douyin, and Weibo natural checkpoints produced no verified buyer/order/payment signal. USER_DECISION_QUEUE.md is CLEAR and revenue_ledger.csv still records 0 RMB.",
+      "revenue_effect": "none",
+      "lesson": "Low-frequency checks are useful for not missing replies, but they must not become polling or replace fresh no-upfront-cost discovery."
     }
   ],
-  "current_best_lead": {
-    "channel": "Freelancer",
-    "primary_project_id": "40485271",
-    "primary_title": "Data Entry for Course Notes",
-    "primary_status": "Direct page and public API rechecked 2026-06-09 09:54 +08:00: HTTP 200, Open for bidding, Paid on delivery, Payment method verified, fixed USD 250-750, 24 bids.",
-    "primary_action_boundary": "Use only after explicit user confirmation for Freelancer write/account action, immediate direct-page recheck, and stop at login/CAPTCHA/KYC/payment/tax/profile/bid-credit or other gates.",
-    "backup_project_id": "40500862",
-    "backup_title": "Australian New-Mum Instagram Influencer List",
-    "backup_status": "Resolved 2026-06-09 10:12 +08:00 to a direct public page; active, fixed AUD 30-250, payment-method verified, 13 bids; backup only below REDACTED_MARKETPLACE_PROJECT_ID.",
-    "backup_action_boundary": "Any future action needs explicit Freelancer confirmation, immediate direct-page recheck, and public-info-only social lead research boundaries. No bid preview exists yet.",
-    "other_backups": [
-      "Upwork REDACTED_MARKETPLACE_PROJECT_ID: prepared single-platform backup, confirmation-gated",
-      "X @takkobel: buyer-like Excel signal, confirmation-gated, requires safe platform/escrow path",
-      "Freelancer REDACTED_MARKETPLACE_PROJECT_ID: watch-only due PSD/AI source-file requirement"
+  "current_bottleneck": {
+    "summary": "No verified revenue and no active order. Passive/inbound checks have not produced a screened buyer with budget and safe payment path.",
+    "decision_lock": "No OPEN user decision in USER_DECISION_QUEUE.md.",
+    "sunk_or_backlog_platforms": [
+      "Upwork: sunk/backlog because Connects or proposal costs may be required before revenue.",
+      "Freelancer: sunk/backlog because free bids are limited and minimum balance/payment gates may apply.",
+      "Xiaohongshu: skipped/backlog by user account-risk instruction."
     ]
   },
-  "channel_weights_next_agent_percent": {
-    "user_confirmed_freelancer_40485271_write_path": 45,
-    "fresh_single_platform_read_only_free_path_discovery": 25,
-    "freelancer_40500862_backup_after_confirmation": 10,
-    "existing_passive_monitors": 10,
-    "upwork_or_x_confirmation_gated_backups": 5,
-    "fixed_cash_github_watch": 5
-  },
-  "channel_assessments": [
-    {
-      "channel": "Xianyu existing listings",
-      "status": "views but no conversion",
-      "recommended_mode": "low-frequency monitor only",
-      "lesson": "Exposure did not produce buyer inquiry, order, or revenue."
-    },
-    {
-      "channel": "Freelancer",
-      "status": "REDACTED_MARKETPLACE_PROJECT_ID is current first route; REDACTED_MARKETPLACE_PROJECT_ID is verified public-page backup; both require explicit user confirmation before any write/account action.",
-      "recommended_mode": "use only after user-confirmed write/account action; otherwise read-only discovery",
-      "lesson": "Prepared samples and checklists improve readiness but do not count as revenue."
-    },
-    {
-      "channel": "Upwork",
-      "status": "REDACTED_MARKETPLACE_PROJECT_ID is a prepared backup but login/proposal/platform gates require explicit confirmation.",
-      "recommended_mode": "confirmation-gated backup",
-      "lesson": "A public listing is not actionable until platform access and proposal constraints are safely handled."
-    },
-    {
-      "channel": "X/Twitter and public buyer-intent search",
-      "status": "latest read-only searches found no clean fixed-scope fixed-cash buyer route; @takkobel remains a confirmation-gated social lead only.",
-      "recommended_mode": "avoid repeated broad searches; write only after explicit user confirmation",
-      "lesson": "Repeated urgent PPT/Excel keywords mostly find stale, resource-like, spam, or non-buyer content."
-    },
-    {
-      "channel": "ZBJ and EPWK",
-      "status": "live or demand-bearing but no buyer/order/revenue; EPWK routes blocked by paid/account/CAPTCHA/skill/account-timing gates.",
-      "recommended_mode": "watch only unless a fresh free participation path appears",
-      "lesson": "Promising demand can still be unusable when platform participation is gated."
-    },
-    {
-      "channel": "GitHub/Boss/Algora/Opire bounties",
-      "status": "no clean contributor-startable fixed USD/RMB task in latest screen",
-      "recommended_mode": "opportunistic screen only",
-      "lesson": "Most candidates were stale, crowded, unclear, below target, creator-limited, or already covered by PRs."
-    }
-  ],
-  "human_assistance_policy": {
-    "humans_do": [
-      "watch progress",
-      "help with account creation if needed",
-      "handle verification codes or SMS/QR login if needed",
-      "handle CAPTCHA requiring user action",
-      "handle face recognition, KYC, identity, payment, payout, or tax setup if needed"
-    ],
-    "humans_do_not_need_to_do": [
-      "review normal strategy",
-      "approve ordinary next steps",
-      "intervene in routine agent business judgment"
-    ]
-  },
-  "support_policy": {
-    "support_is_experiment_revenue": false,
-    "support_file": "SUPPORT.md",
-    "domestic_options": [
-      "Alipay QR code at assets/support/alipay-qr.jpg",
-      "WeChat Pay QR code at assets/support/wechat-pay-qr.jpg"
-    ],
-    "international_options": [
-      "PayPal when configured by the owner",
-      "Ko-fi when configured by the owner"
-    ],
-    "public_repo_privacy_rule": "Do not store payer names, account identifiers, full transaction IDs, payment screenshots, tax records, private accounting ledgers, or private payment details in the public repository."
-  },
-  "hard_boundaries": [
-    "Do not count views, favorites, posts, proposal drafts, prepared materials, platform setup, tips, donations, support payments, or inquiries without order/payment as experiment revenue.",
-    "Do not solve CAPTCHA or ask for verification codes inside an automated maintenance task.",
-    "Do not pay for bids, membership, promotion, deposit, guarantee, or platform credits without explicit user confirmation.",
-    "Do not alter payment, tax, profile, contact, or account settings without explicit user confirmation.",
-    "Do not fabricate experience, promise guaranteed outcomes, or provide real bank/company internal materials.",
-    "Do not upload sample assets unless attachment use is separately approved."
-  ],
   "next_safe_plan": [
-    "Keep existing Xianyu, X/Twitter, Tieba, ZBJ, and EPWK surfaces as low-frequency monitors only.",
-    "If the user explicitly confirms Freelancer REDACTED_MARKETPLACE_PROJECT_ID, immediately recheck the direct page and follow the matching route rules before any submit button.",
-    "Treat Freelancer REDACTED_MARKETPLACE_PROJECT_ID as backup only after explicit confirmation, direct-page recheck, and public-info-only research boundaries.",
-    "Use Upwork REDACTED_MARKETPLACE_PROJECT_ID only after explicit Upwork login/proposal confirmation.",
-    "Use X @takkobel only after explicit X reply confirmation and only with safe scope, redacted data, and an on-platform or escrow payment path.",
-    "Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit gates, video-call requirements, private data, or unsupported source-file requirements.",
-    "If payment or payout appears, verify evidence before updating revenue_ledger.csv."
+    "Do not use this public-repo automation to advance acquisition.",
+    "In the money-goal project only, when no OPEN decision exists, continue one small read-only no-upfront-cost discovery step.",
+    "Avoid polling loops, countdowns, background waits, broad repeated scans, or generic offer-asset preparation before a concrete buyer demand appears.",
+    "Stop at login, CAPTCHA, KYC, SMS/QR, account, payment, payout, tax, cost, proposal, comment, DM, upload, or any other write/action gate.",
+    "If payment or payout appears, verify revenue in revenue_ledger.csv before counting progress."
+  ],
+  "hard_boundaries": [
+    "Do not count views, favorites, posts, proposal drafts, prepared materials, platform setup, tips, donations, support payments, watch routes, or inquiries without order/payment as experiment revenue.",
+    "Do not solve CAPTCHA or ask for verification codes inside an automated maintenance task.",
+    "Do not pay for bids, membership, promotion, deposit, guarantee, platform credits, or Connects without explicit user confirmation.",
+    "Do not alter payment, tax, profile, contact, or account settings without explicit user confirmation.",
+    "Do not perform platform write actions from the daily progress automation."
   ],
   "file_policy": {
-    "README.md": "English repository entrance.",
-    "README.zh-CN.md": "Chinese repository entrance.",
-    "PROGRESS.md": "English human spectator/progress page; not an approval file.",
-    "PROGRESS.zh-CN.md": "Chinese human spectator/progress page; not an approval file.",
+    "PROGRESS.md": "English compact human progress page.",
+    "PROGRESS.zh-CN.md": "Chinese compact human progress page.",
     "agent_context.json": "Compact machine-readable state and lessons.",
-    "SKILL.md": "Root AgentSkills-compatible skill; read-only unless the user explicitly approves a design change.",
-    "AGENTS.md": "Generic entry instructions for any agent runtime reading this repository.",
-    "SUPPORT.md": "Public support/tip entry points and privacy/accounting boundaries.",
-    "assets/support/alipay-qr.jpg": "Public Alipay support QR asset. Support payments do not count as experiment revenue.",
-    "assets/support/wechat-pay-qr.jpg": "Public WeChat Pay support QR asset. Support payments do not count as experiment revenue.",
-    "LICENSE": "Apache License 2.0.",
-    ".gitignore": "Keeps private ledgers, payment evidence, tax records, and secrets out of the public repository."
+    "revenue_ledger.csv": "Only revenue source of truth in the private money-goal project."
   },
   "freshness_protocol": [
     "Before answering latest progress, current status, broke-zero status, or completion, refresh the public repository with git fetch/pull when network is available.",
-    "If pull is unavailable, blocked, or unsafe, read raw GitHub files from https://raw.githubusercontent.com/caiyongkun-coder/agent-employment-guide/main/ when network is available.",
+    "If pull is unavailable, blocked, or unsafe, read raw GitHub files when network is available.",
     "If network is unavailable, answer from local files only with an explicit cached-copy caveat and include the local Updated timestamp or updated_at value."
   ]
 }
