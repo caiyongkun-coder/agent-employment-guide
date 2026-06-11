@@ -2,7 +2,7 @@
 
 [Chinese progress](PROGRESS.zh-CN.md) | English
 
-Updated: 2026-06-10 10:05 +08:00
+Updated: 2026-06-11 09:40 +08:00
 
 This page is a public, privacy-safe progress snapshot. It is for watching the experiment at a high level, not for reviewing leads, account state, buyer conversations, private platform activity, or operational details.
 
@@ -21,10 +21,11 @@ Only verified net revenue counts. The goal is complete only when the private rev
 
 ## Latest Meaningful Progress
 
+- 2026-06-10: The private project completed a read-only scan and found three gate-qualified first-deal candidate route classes. They were screened for zero-start cost, low account risk, direct paid intent, no paid bid or membership gate, and no required large free sample before contact.
+- 2026-06-10: No outreach, quote, proposal, comment, DM, payment action, order, payout, or verified revenue occurred. The private project is waiting for human selection before any external-write approval preview.
+- 2026-06-10: The candidate gate was tightened: paid-bid marketplaces, registration-cost paths, KYC/payout-setup-first paths, free-sample-heavy paths, and out-of-pocket routes are deferred by default unless the user explicitly reopens them.
 - 2026-06-10: The public snapshot was privacy-redacted. Specific platform user IDs, buyer/lead identifiers, account metrics, direct marketplace project IDs, local absolute paths, and message/inbox details are no longer included in the public files.
-- 2026-06-10: Several private read-only checkpoints across inbound or low-frequency routes produced no verified buyer, order, payment, or revenue signal.
 - 2026-06-09: The private working project was slimmed into compact read-first control files. The old frequent heartbeat automation was deleted. Future public updates should stay compressed and privacy-safe.
-- 2026-06-09: Some routes were moved to backlog because their useful participation path may require pre-revenue costs or account-risk tradeoffs.
 
 ## Compressed Timeline
 
@@ -50,16 +51,17 @@ The project shifted to context control and stricter decision gates. Heavy logs w
 
 ### 2026-06-10
 
-Private read-only checks produced no verified buyer/order/payment signal. The public repository was audited and redacted to remove over-specific operational and privacy-sensitive details. Revenue stayed 0 RMB.
+The private project added a stricter candidate gate, reclassified cost-gated marketplace observations as deferred, and completed a read-only scan that produced three gate-qualified first-deal candidate route classes. No outreach, quote, order, payout, or verified revenue occurred. The public repository was audited and redacted to remove over-specific operational and privacy-sensitive details. Revenue stayed 0 RMB.
 
 ## Current Bottleneck
 
-There is no active order and no verified revenue. Passive and inbound checks have not produced a screened buyer with a concrete paid task, budget, safe contact path, and safe payment route.
+There is no active order and no verified revenue. The private project now has three screened candidate route classes, but any first-deal attempt requires human selection and a separate external-write approval preview.
 
 Current route boundaries:
 
 - Cost-gated marketplaces stay backlog unless the user explicitly reopens their pre-revenue cost gates.
 - Account-risk routes stay backlog unless the user explicitly reopens them.
+- Free-sample-heavy or out-of-pocket routes stay deferred unless the user explicitly reopens them.
 - Waiting leads are private operational state and should not be identified in public snapshots.
 - Public progress should describe route classes and lessons, not platform IDs, account metrics, buyer identifiers, message text, or local paths.
 
@@ -74,6 +76,7 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 - Exposure is not conversion. Listings and posts can produce views or discussion without verified revenue.
 - A storefront, post, proposal draft, or prepared asset is not revenue.
 - Marketplace demand can be real but blocked by paid bid chances, membership, identity, CAPTCHA, account timing, source-file requirements, private-data risk, or pre-revenue platform costs.
+- A first-deal candidate should pass the zero-start-cost, low-risk, direct-paid-intent gate before it is treated as actionable.
 - Low-frequency follow-up checks should happen only at natural checkpoints; they must not become polling loops.
 - Public progress snapshots need privacy review before publishing. Do not expose buyer IDs, user IDs, platform account metrics, message/inbox details, private local paths, or transaction evidence.
 - Context should stay compact: keep date-level summaries and source classes instead of long platform diaries.
@@ -81,7 +84,7 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 ## Next Safe Plan
 
 1. Keep this public-repo automation backup-only; it must not advance acquisition or interact with platforms.
-2. In the private money-goal project only, when there is no open decision gate, continue one small read-only no-upfront-cost discovery step.
+2. In the private money-goal project only, choose one screened candidate route before preparing any external-write approval preview.
 3. Do not prepare generic offer assets before a concrete buyer demand appears.
 4. Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit/credit gates, private data, unsupported source-file requirements, or any write action.
 5. If payment or payout appears, verify evidence in the private ledger before counting progress.
