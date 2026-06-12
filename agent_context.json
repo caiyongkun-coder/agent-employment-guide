@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "updated_at": "2026-06-12 09:11 +08:00",
+  "updated_at": "2026-06-12 09:12 +08:00",
   "freshness_note": "Updated from private source-of-truth files and redacted for public release. Public snapshots intentionally omit buyer/user identifiers, account metrics, message details, local absolute paths, and transaction evidence.",
   "repo": {
     "name_en": "Agent Employment Guide",
