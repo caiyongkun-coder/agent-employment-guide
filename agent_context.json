@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "updated_at": "2026-06-11 09:10 +08:00",
+  "updated_at": "2026-06-12 09:11 +08:00",
   "freshness_note": "Updated from private source-of-truth files and redacted for public release. Public snapshots intentionally omit buyer/user identifiers, account metrics, message details, local absolute paths, and transaction evidence.",
   "repo": {
     "name_en": "Agent Employment Guide",
@@ -45,13 +45,23 @@
     "non_revenue_rule": "Tips, donations, support payments, views, favorites, posts, drafts, platform setup, inquiries without order/payment, and watch routes do not count."
   },
   "current_mode": {
-    "status": "waiting for human selection after a privacy-safe read-only candidate scan",
-    "decision_queue_status": "human selection needed inside the private project before any outreach preview",
+    "status": "first-deal-attempt mode with only low-risk read-only scanning allowed unless a private approval gate is opened",
+    "decision_queue_status": "no public action needed; private project must gate any outreach, quote, file review, remote support, payment discussion, or proposal",
     "automation_boundary": "The daily progress automation is backup-only and must not advance acquisition or perform platform actions.",
     "low_frequency_follow_up_policy": "Waiting leads may be checked only inside the private project at natural checkpoints, without polling loops or automation.",
     "public_reporting_policy": "Waiting leads, account metrics, platform identifiers, and message details stay private."
   },
   "latest_updates": [
+    {
+      "time": "2026-06-12",
+      "summary": "The private project repaired candidate-source maintenance and read-only tool preflight caching, then completed another bounded read-only scan. No gate-qualified candidate was promoted; observed routes remained deferred because of competition, login or social-write gates, missing fixed payment terms, specialized scope uncertainty, or private-file/config/log boundaries.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-11",
+      "summary": "The private project entered first-deal-attempt mode, handled a waiting side line behind scope/privacy/payment gates, and ran several read-only scans and human reviews. No Codex external write, order, payout, or verified revenue occurred.",
+      "revenue_effect": "none"
+    },
     {
       "time": "2026-06-10",
       "summary": "The private project completed a read-only scan and found three gate-qualified first-deal candidate route classes with zero-start-cost, low-risk, direct-paid-intent characteristics. No external write action was performed.",
@@ -65,11 +75,6 @@
     {
       "time": "2026-06-10",
       "summary": "Public repository privacy audit and redaction removed over-specific platform, buyer, account, path, and message details from the current public snapshot.",
-      "revenue_effect": "none"
-    },
-    {
-      "time": "2026-06-09",
-      "summary": "The private working project was slimmed into compact read-first control files; heavy operational logs remained private.",
       "revenue_effect": "none"
     }
   ],
@@ -109,20 +114,33 @@
       "summary": "The private project added a stricter candidate gate, reclassified cost-gated marketplace observations as deferred, and completed a read-only scan that produced three gate-qualified first-deal candidate route classes. No outreach, quote, order, payout, or verified revenue occurred. The public repository was redacted to remove over-specific operational and privacy-sensitive details.",
       "revenue_effect": "none",
       "lesson": "A candidate becomes first-deal material only when it avoids pre-revenue cost, major account risk, unpaid custom work, and write-action commitments before human approval."
+    },
+    {
+      "date": "2026-06-11",
+      "summary": "The private project entered first-deal-attempt mode, kept one waiting side line behind scope/privacy/payment gates, and used read-only scans plus human reviews to reject or defer routes blocked by contactability, intervention feasibility, hiring-like scope, platform writes, or private-file/remote-support boundaries.",
+      "revenue_effect": "none",
+      "lesson": "A paid-intent signal is still not actionable when the practical contact path, narrow deliverable, or pre-payment access boundary is unsafe."
+    },
+    {
+      "date": "2026-06-12",
+      "summary": "The private framework repaired candidate-source maintenance and cached a read-only tool limitation, then completed one more bounded read-only scan with no promoted candidate. Deferred route classes still failed on competition, login/write gates, missing fixed payment terms, specialized-fit uncertainty, or private-file/config/log boundaries.",
+      "revenue_effect": "none",
+      "lesson": "Caching tool limitations and scanning bounded source lists preserves context, but candidate quality still depends on strict payment, contactability, and intervention gates."
     }
   ],
   "current_bottleneck": {
-    "summary": "No verified revenue and no active order. The private project now has three screened candidate route classes, but any first-deal attempt requires human selection and a separate external-write approval preview.",
-    "decision_lock": "Human selection is needed inside the private project before any outreach, quote, message, or proposal preview.",
+    "summary": "No verified revenue and no active order. The private project is in first-deal-attempt mode, but the latest bounded read-only scan did not produce a promotable candidate.",
+    "decision_lock": "Any outreach, quote, message, proposal, file review, remote support, payment handling, or private-data work must be approved inside the private project first.",
     "route_boundaries": [
       "Cost-gated marketplaces stay backlog unless the user explicitly reopens their pre-revenue cost gates.",
       "Account-risk routes stay backlog unless the user explicitly reopens them.",
+      "Hiring-style, high-competition, login-gated, CAPTCHA-gated, social-write-first, private-file, private-data, or remote-support routes stay deferred without a narrow paid boundary.",
       "Waiting leads are private operational state and should not be identified in public snapshots."
     ]
   },
   "next_safe_plan": [
     "Do not use this public-repo automation to advance acquisition.",
-    "In the private money-goal project only, choose one screened candidate route before preparing any external-write approval preview.",
+    "In the private money-goal project only, continue bounded low-risk read-only scanning until a candidate passes the gate or a waiting lead produces a concrete next step.",
     "Avoid polling loops, countdowns, background waits, broad repeated scans, or generic offer-asset preparation before a concrete buyer demand appears.",
     "Stop at login, CAPTCHA, KYC, SMS/QR, account, payment, payout, tax, cost, proposal, comment, DM, upload, or any other write/action gate.",
     "If payment or payout appears, verify revenue in the private ledger before counting progress.",
