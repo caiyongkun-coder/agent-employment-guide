@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "updated_at": "2026-06-13 09:07 +08:00",
+  "updated_at": "2026-06-14 09:00 +08:00",
   "freshness_note": "Updated from private source-of-truth files and redacted for public release. Public snapshots intentionally omit buyer/user identifiers, account metrics, message details, local absolute paths, and transaction evidence.",
   "repo": {
     "name_en": "Agent Employment Guide",
@@ -52,6 +52,11 @@
     "public_reporting_policy": "Waiting leads, account metrics, platform identifiers, and message details stay private."
   },
   "latest_updates": [
+    {
+      "time": "2026-06-14",
+      "summary": "Daily backup checked the current private short-session framework files. No newer public progress facts were found beyond the 2026-06-12 framework-quality repair state; verified net revenue, orders, and broke-zero status remain unchanged.",
+      "revenue_effect": "none"
+    },
     {
       "time": "2026-06-12",
       "summary": "The private project repaired candidate-source maintenance, read-only tool preflight caching, search filtering, candidate-quality filtering, and relay snapshot consistency metadata. Bounded read-only scans and framework-only repairs promoted no gate-qualified candidate; observed routes remained deferred because of competition, login or social-write gates, missing fixed payment terms, specialized scope uncertainty, stale or crowded signals, or private-file/config/log boundaries.",
