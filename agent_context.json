@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "updated_at": "2026-06-14 09:00 +08:00",
+  "updated_at": "2026-06-15 09:00 +08:00",
   "freshness_note": "Updated from private source-of-truth files and redacted for public release. Public snapshots intentionally omit buyer/user identifiers, account metrics, message details, local absolute paths, and transaction evidence.",
   "repo": {
     "name_en": "Agent Employment Guide",
@@ -53,8 +53,8 @@
   },
   "latest_updates": [
     {
-      "time": "2026-06-14",
-      "summary": "Daily backup checked the current private short-session framework files. No newer public progress facts were found beyond the 2026-06-12 framework-quality repair state; verified net revenue, orders, and broke-zero status remain unchanged.",
+      "time": "2026-06-15",
+      "summary": "Daily backup checked the current private short-session framework files. No newer public progress facts were found beyond the 2026-06-12 framework-quality repair state; verified net revenue, orders, pending approvals, and broke-zero status remain unchanged.",
       "revenue_effect": "none"
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "date": "2026-06-12",
-      "summary": "The private framework repaired candidate-source maintenance, cached a read-only tool limitation, added tighter search and source-quality filtering, and made relay snapshot consistency explicit. Bounded read-only scans and framework-only repairs promoted no candidate. Deferred route classes still failed on competition, login/write gates, missing fixed payment terms, stale or crowded signals, specialized-fit uncertainty, or private-file/config/log boundaries.",
+      "summary": "The private framework repaired candidate-source maintenance, cached a read-only tool limitation, added tighter search and source-quality filtering, and made relay snapshot consistency explicit. Bounded read-only scans and framework-only repairs promoted no candidate. Deferred route classes still failed on competition, login/write gates, missing fixed payment terms, stale or crowded signals, specialized-fit uncertainty, or private-file/config/log boundaries. A 2026-06-15 daily backup found no newer public progress facts; revenue, orders, pending approvals, and broke-zero status stayed unchanged.",
       "revenue_effect": "none",
       "lesson": "Caching tool limitations, filtering stale source records before scoring, and keeping relay state explicit preserves context, but candidate quality still depends on strict payment, contactability, and intervention gates."
     }

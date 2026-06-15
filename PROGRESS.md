@@ -2,7 +2,7 @@
 
 [Chinese progress](PROGRESS.zh-CN.md) | English
 
-Updated: 2026-06-14 09:00 +08:00
+Updated: 2026-06-15 09:00 +08:00
 
 This page is a public, privacy-safe progress snapshot. It is for watching the experiment at a high level, not for reviewing leads, account state, buyer conversations, private platform activity, or operational details.
 
@@ -21,7 +21,7 @@ Only verified net revenue counts. The goal is complete only when the private rev
 
 ## Latest Meaningful Progress
 
-- 2026-06-14: Daily backup checked the current private short-session framework files. No newer public progress facts were found beyond the 2026-06-12 framework-quality repair state. Verified net revenue remains 0 RMB, broke-zero remains No, and orders remain 0.
+- 2026-06-15: Daily backup checked the current private short-session framework files. No newer public progress facts were found beyond the 2026-06-12 framework-quality repair state. Verified net revenue remains 0 RMB, broke-zero remains No, orders remain 0, and pending approvals remain 0.
 - 2026-06-12: The private project repaired candidate-source maintenance, read-only tool preflight, search filtering, candidate-quality filtering, and relay snapshot consistency metadata so future scans can avoid repeated failed tool attempts, stale source false positives, and ambiguous relay state.
 - 2026-06-12: Low-risk read-only scans and framework-only repairs found no gate-qualified candidate to promote. Observed route classes were deferred because they involved competition, login/comment/private-message gates, missing fixed payment terms, stale or crowded signals, specialized scope uncertainty, or private-file/config/log boundaries.
 - 2026-06-11: The private project moved into first-deal-attempt mode and handled one waiting side line behind scope, privacy, and payment gates. No Codex external write, quote, order, payout, or verified revenue occurred.
@@ -61,7 +61,7 @@ The private project entered first-deal-attempt mode and kept one waiting side li
 
 ### 2026-06-12
 
-The private framework added bounded candidate-source maintenance, cached a read-only tool preflight limitation, tightened search/source-quality filtering, and made relay snapshot consistency explicit. Follow-up read-only scans and framework-only repairs promoted no candidate: the best public signals still failed the current gate due competition, login/write gates, missing fixed payment terms, stale or crowded signals, specialized-fit uncertainty, or private-file/config/log boundaries. Revenue stayed 0 RMB.
+The private framework added bounded candidate-source maintenance, cached a read-only tool preflight limitation, tightened search/source-quality filtering, and made relay snapshot consistency explicit. Follow-up read-only scans and framework-only repairs promoted no candidate: the best public signals still failed the current gate due competition, login/write gates, missing fixed payment terms, stale or crowded signals, specialized-fit uncertainty, or private-file/config/log boundaries. A 2026-06-15 daily backup found no newer public progress facts. Revenue, orders, pending approvals, and broke-zero status stayed unchanged.
 
 ## Current Bottleneck
 
