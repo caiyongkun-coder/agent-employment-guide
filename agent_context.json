@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "updated_at": "2026-06-15 09:00 +08:00",
+  "updated_at": "2026-06-16 09:00 +08:00",
   "freshness_note": "Updated from private source-of-truth files and redacted for public release. Public snapshots intentionally omit buyer/user identifiers, account metrics, message details, local absolute paths, and transaction evidence.",
   "repo": {
     "name_en": "Agent Employment Guide",
@@ -54,7 +54,7 @@
   "latest_updates": [
     {
       "time": "2026-06-15",
-      "summary": "Daily backup checked the current private short-session framework files. No newer public progress facts were found beyond the 2026-06-12 framework-quality repair state; verified net revenue, orders, pending approvals, and broke-zero status remain unchanged.",
+      "summary": "The private project reviewed existing compact candidate assets, prepared but did not execute outreach previews, then cancelled pending approvals after human pass decisions and a gate repair. Fresh bounded read-only searches retained rejected or deferred market signals for dedupe, but no signal survived the current gate into an executable first-deal candidate.",
       "revenue_effect": "none"
     },
     {
@@ -128,13 +128,19 @@
     },
     {
       "date": "2026-06-12",
-      "summary": "The private framework repaired candidate-source maintenance, cached a read-only tool limitation, added tighter search and source-quality filtering, and made relay snapshot consistency explicit. Bounded read-only scans and framework-only repairs promoted no candidate. Deferred route classes still failed on competition, login/write gates, missing fixed payment terms, stale or crowded signals, specialized-fit uncertainty, or private-file/config/log boundaries. A 2026-06-15 daily backup found no newer public progress facts; revenue, orders, pending approvals, and broke-zero status stayed unchanged.",
+      "summary": "The private framework added bounded candidate-source maintenance, cached a read-only tool preflight limitation, tightened search/source-quality filtering, and made relay snapshot consistency explicit. Follow-up read-only scans and framework-only repairs promoted no candidate: the best public signals still failed the current gate due competition, login/write gates, missing fixed payment terms, stale or crowded signals, specialized-fit uncertainty, or private-file/config/log boundaries.",
       "revenue_effect": "none",
       "lesson": "Caching tool limitations, filtering stale source records before scoring, and keeping relay state explicit preserves context, but candidate quality still depends on strict payment, contactability, and intervention gates."
+    },
+    {
+      "date": "2026-06-15",
+      "summary": "The private project used compact candidate summaries and bounded public reads to review existing route classes. Draft outreach previews were generated inside the private approval gate but were cancelled unexecuted after policy repair and human pass decisions. Fresh read-only search shards then collected additional market signals for dedupe and routing, but the current gate rejected or deferred them because they were stale, crowded, already answered, identity-gated, payout-gated, amount-missing, scope-unstable, or risky before payment intent was validated. No platform write action, proposal, order, payout, or verified revenue occurred.",
+      "revenue_effect": "none",
+      "lesson": "A promoted-looking route should still be cancelled when a later gate repair or human pass decision shows the contact path, platform route, or availability is not worth executing."
     }
   ],
   "current_bottleneck": {
-    "summary": "No verified revenue and no active order. The private project is in first-deal-attempt mode, but the latest bounded read-only scans and framework-quality repairs did not produce a promotable candidate.",
+    "summary": "No verified revenue and no active order. The private project is in first-deal-attempt mode, and the latest bounded read-only scans did not produce a gate-qualified executable candidate.",
     "decision_lock": "Any outreach, quote, message, proposal, file review, remote support, payment handling, or private-data work must be approved inside the private project first.",
     "route_boundaries": [
       "Cost-gated marketplaces stay backlog unless the user explicitly reopens their pre-revenue cost gates.",
