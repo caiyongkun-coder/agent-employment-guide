@@ -2,7 +2,7 @@
 
 [Chinese progress](PROGRESS.zh-CN.md) | English
 
-Updated: 2026-06-16 09:00 +08:00
+Updated: 2026-06-17 09:23 +08:00
 
 This page is a public, privacy-safe progress snapshot. It is for watching the experiment at a high level, not for reviewing leads, account state, buyer conversations, private platform activity, or operational details.
 
@@ -21,9 +21,10 @@ Only verified net revenue counts. The goal is complete only when the private rev
 
 ## Latest Meaningful Progress
 
+- 2026-06-16: The private project reviewed compact candidate records, then ran a read-only freshness recheck. No safe outreach candidate was found: some signals could not be verified as open, and one visible route appeared already claimed.
+- 2026-06-16: Two bounded read-only search aggregations completed with valid shards and retained market signals for dedupe/routing. The framework also found that failed freshness checks need explicit candidate demotion, so older eligible records do not loop back into review. Promoted-looking signals still did not become executable public first-deal candidates under the current gate.
+- 2026-06-16: Current private relay state allows only low-risk read-only continuation, pending approvals are 0, verified net revenue remains 0 RMB, broke-zero remains No, and orders remain 0.
 - 2026-06-15: The private project reviewed existing compact candidate assets, prepared but did not execute outreach previews, then cancelled the pending approvals after human pass decisions and a gate repair. No external write, proposal, order, payout, or verified revenue occurred.
-- 2026-06-15: Fresh bounded read-only searches aggregated multiple shards and retained new rejected or deferred market signals for dedupe. A small number of signals were briefly promoted for private review, but none survived the current gate into an executable first-deal candidate.
-- 2026-06-15: Current private relay state returned to low-risk read-only continuation, pending approvals are 0, verified net revenue remains 0 RMB, broke-zero remains No, and orders remain 0.
 - 2026-06-12: The private project repaired candidate-source maintenance, read-only tool preflight, search filtering, candidate-quality filtering, and relay snapshot consistency metadata so future scans can avoid repeated failed tool attempts, stale source false positives, and ambiguous relay state.
 - 2026-06-12: Low-risk read-only scans and framework-only repairs found no gate-qualified candidate to promote. Observed route classes were deferred because they involved competition, login/comment/private-message gates, missing fixed payment terms, stale or crowded signals, specialized scope uncertainty, or private-file/config/log boundaries.
 - 2026-06-11: The private project moved into first-deal-attempt mode and handled one waiting side line behind scope, privacy, and payment gates. No Codex external write, quote, order, payout, or verified revenue occurred.
@@ -69,6 +70,10 @@ The private framework added bounded candidate-source maintenance, cached a read-
 
 The private project used compact candidate summaries and bounded public reads to review existing route classes. Draft outreach previews were generated inside the private approval gate but were cancelled unexecuted after policy repair and human pass decisions. Fresh read-only search shards then collected additional market signals for dedupe and routing, but the current gate rejected or deferred them because they were stale, crowded, already answered, identity-gated, payout-gated, amount-missing, scope-unstable, or risky before payment intent was validated. No platform write action, proposal, order, payout, or verified revenue occurred. Revenue, orders, pending approvals, and broke-zero status stayed unchanged.
 
+### 2026-06-16
+
+The private project reviewed compact candidate records and ran a read-only freshness recheck. The recheck found no safe outreach candidate: some signals remained unverifiable as open, and one visible route appeared already claimed. Two later bounded read-only search aggregations completed with valid shards and retained market signals for dedupe/routing, but no signal became an executable first-deal candidate under the current gate. Pending approvals stayed 0. No platform write action, proposal, order, payout, or verified revenue occurred. Revenue and broke-zero status stayed unchanged.
+
 ## Current Bottleneck
 
 There is no active order and no verified revenue. The private project is in first-deal-attempt mode, and the latest safe scans have not produced a gate-qualified executable candidate. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
@@ -95,7 +100,8 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 - Marketplace demand can be real but blocked by paid bid chances, membership, identity, CAPTCHA, account timing, source-file requirements, private-data risk, or pre-revenue platform costs.
 - A first-deal candidate should pass the zero-start-cost, low-risk, direct-paid-intent, contactable, narrow-intervention gate before it is treated as actionable.
 - A promoted-looking route should still be cancelled when a later gate repair or human pass decision shows the contact path, platform route, or availability is not worth executing.
-- Fresh search is useful for dedupe and market sensing, but stale, answered, identity-gated, payout-gated, amount-missing, scope-unstable, or crowded signals should not be converted into outreach.
+- Fresh search is useful for dedupe and market sensing, but unverifiable, already-claimed, stale, answered, identity-gated, payout-gated, amount-missing, scope-unstable, or crowded signals should not be converted into outreach.
+- Failed freshness checks need explicit candidate demotion or status updates; otherwise older eligible records can loop back into review and waste context.
 - Tool friction should be cached and routed around; repeated failed read-only tool attempts waste context without improving candidate quality.
 - Candidate-source scoring needs hard quality filters before keyword scoring, or stale summaries and crowded/gated observations can look better than they are.
 - Low-frequency follow-up checks should happen only at natural checkpoints; they must not become polling loops.
