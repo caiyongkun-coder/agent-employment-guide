@@ -2,7 +2,7 @@
 
 [Chinese progress](PROGRESS.zh-CN.md) | English
 
-Updated: 2026-06-17 09:23 +08:00
+Updated: 2026-06-18 09:08 +08:00
 
 This page is a public, privacy-safe progress snapshot. It is for watching the experiment at a high level, not for reviewing leads, account state, buyer conversations, private platform activity, or operational details.
 
@@ -21,9 +21,11 @@ Only verified net revenue counts. The goal is complete only when the private rev
 
 ## Latest Meaningful Progress
 
+- 2026-06-17: The private project ran multiple bounded read-only search aggregations and strategy reviews. The final imported round had valid shards and retained market signals, but it promoted 0 executable candidates.
+- 2026-06-17: A strategy review found the compact public-search corpus still had 0 current-goal eligible candidates. A later encoding review corrected an environment diagnosis: the source content was valid UTF-8, and the bad display came from shell encoding defaults rather than project data corruption.
+- 2026-06-17: The private relay state is now waiting for human review because repeated adjusted read-only search rounds still produced no promotable lead. Pending approvals are 0, verified net revenue remains 0 RMB, broke-zero remains No, and orders remain 0.
 - 2026-06-16: The private project reviewed compact candidate records, then ran a read-only freshness recheck. No safe outreach candidate was found: some signals could not be verified as open, and one visible route appeared already claimed.
 - 2026-06-16: Two bounded read-only search aggregations completed with valid shards and retained market signals for dedupe/routing. The framework also found that failed freshness checks need explicit candidate demotion, so older eligible records do not loop back into review. Promoted-looking signals still did not become executable public first-deal candidates under the current gate.
-- 2026-06-16: Current private relay state allows only low-risk read-only continuation, pending approvals are 0, verified net revenue remains 0 RMB, broke-zero remains No, and orders remain 0.
 - 2026-06-15: The private project reviewed existing compact candidate assets, prepared but did not execute outreach previews, then cancelled the pending approvals after human pass decisions and a gate repair. No external write, proposal, order, payout, or verified revenue occurred.
 - 2026-06-12: The private project repaired candidate-source maintenance, read-only tool preflight, search filtering, candidate-quality filtering, and relay snapshot consistency metadata so future scans can avoid repeated failed tool attempts, stale source false positives, and ambiguous relay state.
 - 2026-06-12: Low-risk read-only scans and framework-only repairs found no gate-qualified candidate to promote. Observed route classes were deferred because they involved competition, login/comment/private-message gates, missing fixed payment terms, stale or crowded signals, specialized scope uncertainty, or private-file/config/log boundaries.
@@ -74,9 +76,13 @@ The private project used compact candidate summaries and bounded public reads to
 
 The private project reviewed compact candidate records and ran a read-only freshness recheck. The recheck found no safe outreach candidate: some signals remained unverifiable as open, and one visible route appeared already claimed. Two later bounded read-only search aggregations completed with valid shards and retained market signals for dedupe/routing, but no signal became an executable first-deal candidate under the current gate. Pending approvals stayed 0. No platform write action, proposal, order, payout, or verified revenue occurred. Revenue and broke-zero status stayed unchanged.
 
+### 2026-06-17
+
+The private project ran several bounded read-only search aggregations plus compact strategy and environment reviews. The search rounds retained more market signals for dedupe and routing, but repeated adjusted searches still produced no promotable lead under the current gate. The strategy review found no current-goal eligible candidate in the compact corpus, while the environment review corrected an earlier encoding diagnosis and confirmed the issue was shell display defaults, not corrupted source content. The private relay state moved to waiting for human review. Pending approvals stayed 0. No platform write action, proposal, order, payout, or verified revenue occurred. Revenue and broke-zero status stayed unchanged.
+
 ## Current Bottleneck
 
-There is no active order and no verified revenue. The private project is in first-deal-attempt mode, and the latest safe scans have not produced a gate-qualified executable candidate. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
+There is no active order and no verified revenue. The private project is in first-deal-attempt mode, and repeated adjusted read-only scans have not produced a gate-qualified executable candidate. The current private relay state is waiting for human review before more strategy changes or external actions. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
 
 Current route boundaries:
 
@@ -102,6 +108,7 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 - A promoted-looking route should still be cancelled when a later gate repair or human pass decision shows the contact path, platform route, or availability is not worth executing.
 - Fresh search is useful for dedupe and market sensing, but unverifiable, already-claimed, stale, answered, identity-gated, payout-gated, amount-missing, scope-unstable, or crowded signals should not be converted into outreach.
 - Failed freshness checks need explicit candidate demotion or status updates; otherwise older eligible records can loop back into review and waste context.
+- When repeated adjusted read-only searches still return 0 promotable candidates, the next useful step is strategy review or human direction, not another unchanged search loop.
 - Tool friction should be cached and routed around; repeated failed read-only tool attempts waste context without improving candidate quality.
 - Candidate-source scoring needs hard quality filters before keyword scoring, or stale summaries and crowded/gated observations can look better than they are.
 - Low-frequency follow-up checks should happen only at natural checkpoints; they must not become polling loops.

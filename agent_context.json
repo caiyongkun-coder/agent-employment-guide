@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "updated_at": "2026-06-17 09:23 +08:00",
+  "updated_at": "2026-06-18 09:08 +08:00",
   "freshness_note": "Updated from private source-of-truth files and redacted for public release. Public snapshots intentionally omit buyer/user identifiers, account metrics, message details, local absolute paths, and transaction evidence.",
   "repo": {
     "name_en": "Agent Employment Guide",
@@ -52,6 +52,11 @@
     "public_reporting_policy": "Waiting leads, account metrics, platform identifiers, and message details stay private."
   },
   "latest_updates": [
+    {
+      "time": "2026-06-17",
+      "summary": "The private project ran several bounded read-only executable-entry search rounds plus read-only strategy and environment reviews. The latest canonical round completed with valid shards and recorded market assets, but no promotable lead survived the gate. The framework also rejected some incomplete-budget worker results, confirmed the active corpus had zero current-goal eligible candidates, and corrected a prior encoding diagnosis: the apparent Chinese text issue came from the Windows PowerShell reading environment, not from the project file content. Relay returned to human review after the adjusted strategy still produced no executable first-deal candidate.",
+      "revenue_effect": "none"
+    },
     {
       "time": "2026-06-16",
       "summary": "The private project reviewed compact candidate records and ran read-only freshness rechecks. No safe outreach candidate was found because some signals could not be verified as open and one visible route appeared already claimed. Two later bounded read-only search aggregations completed with valid shards and retained market signals for dedupe/routing, and the framework found that failed freshness checks need explicit candidate demotion. No signal became an executable first-deal candidate under the current gate.",
@@ -148,11 +153,17 @@
       "summary": "The private project reviewed compact candidate records and ran a read-only freshness recheck. The recheck found no safe outreach candidate: some signals remained unverifiable as open, and one visible route appeared already claimed. Two later bounded read-only search aggregations completed with valid shards and retained market signals for dedupe/routing, but no signal became an executable first-deal candidate under the current gate. Pending approvals stayed 0. No platform write action, proposal, order, payout, or verified revenue occurred.",
       "revenue_effect": "none",
       "lesson": "Unverifiable or already-claimed signals should be retained for dedupe and route learning, not converted into outreach; failed freshness checks need explicit candidate demotion or status updates."
+    },
+    {
+      "date": "2026-06-17",
+      "summary": "The private project continued bounded read-only executable-entry searches across public route classes and performed compact strategy/environment reviews. Multiple search rounds produced valid shards and retained market signals, but the active corpus still had zero current-goal eligible candidates and the latest canonical round promoted 0 leads. A limited approval preview from an invite/registration-gated route was cancelled unexecuted, and some worker results were rejected because budget accounting was incomplete. The project also corrected a prior mojibake diagnosis: the file content was valid UTF-8, while the issue came from the Windows PowerShell reading environment. After the adjusted strategy still produced no promotable lead, the relay stopped for human review. No platform write action, proposal, order, payout, or verified revenue occurred.",
+      "revenue_effect": "none",
+      "lesson": "When repeated bounded searches return zero eligible candidates, pause for strategy review instead of widening loops; environment-level encoding issues should be verified before treating project files as corrupt."
     }
   ],
   "current_bottleneck": {
-    "summary": "No verified revenue and no active order. The private project is in first-deal-attempt mode, and the latest read-only freshness checks and bounded search aggregations did not produce a gate-qualified executable candidate.",
-    "decision_lock": "Any outreach, quote, message, proposal, file review, remote support, payment handling, or private-data work must be approved inside the private project first.",
+    "summary": "No verified revenue and no active order. The private project is in first-deal-attempt mode, and the latest bounded read-only executable-entry searches plus strategy review still produced zero current-goal eligible candidates.",
+    "decision_lock": "The private relay state is waiting for human review. Any outreach, quote, message, proposal, file review, remote support, payment handling, strategy-changing action, or private-data work must be approved inside the private project first.",
     "route_boundaries": [
       "Cost-gated marketplaces stay backlog unless the user explicitly reopens their pre-revenue cost gates.",
       "Account-risk routes stay backlog unless the user explicitly reopens them.",
