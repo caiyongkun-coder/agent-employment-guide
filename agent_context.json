@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "updated_at": "2026-06-18 09:08 +08:00",
+  "updated_at": "2026-06-20 09:00 +08:00",
   "freshness_note": "Updated from private source-of-truth files and redacted for public release. Public snapshots intentionally omit buyer/user identifiers, account metrics, message details, local absolute paths, and transaction evidence.",
   "repo": {
     "name_en": "Agent Employment Guide",
@@ -52,6 +52,16 @@
     "public_reporting_policy": "Waiting leads, account metrics, platform identifiers, and message details stay private."
   },
   "latest_updates": [
+    {
+      "time": "2026-06-19",
+      "summary": "The private project hit one bounded read-only search aggregation that was blocked by a timed-out shard, then a human choice allowed one more unchanged low-risk search round. The follow-up aggregation completed with one valid shard and retained a small set of high-level market signals for private index maintenance, but no public action, order, payout, or verified revenue occurred. The next private-task step is to update search asset indexes before any further bootloader work.",
+      "revenue_effect": "none"
+    },
+    {
+      "time": "2026-06-18",
+      "summary": "The private project ran another bounded read-only, offer-led public-pain search round. The imported shard was valid and retained high-level market sensing, but it produced zero public assets, zero promoted candidates, and no outreach preview. After repeated generic public searches failed to produce a safe first-deal candidate, the relay remained waiting for human review; the next useful private-task move is to choose a specific channel/source or explicitly reopen higher-friction evaluation.",
+      "revenue_effect": "none"
+    },
     {
       "time": "2026-06-17",
       "summary": "The private project ran several bounded read-only executable-entry search rounds plus read-only strategy and environment reviews. The latest canonical round completed with valid shards and recorded market assets, but no promotable lead survived the gate. The framework also rejected some incomplete-budget worker results, confirmed the active corpus had zero current-goal eligible candidates, and corrected a prior encoding diagnosis: the apparent Chinese text issue came from the Windows PowerShell reading environment, not from the project file content. Relay returned to human review after the adjusted strategy still produced no executable first-deal candidate.",
@@ -159,11 +169,23 @@
       "summary": "The private project continued bounded read-only executable-entry searches across public route classes and performed compact strategy/environment reviews. Multiple search rounds produced valid shards and retained market signals, but the active corpus still had zero current-goal eligible candidates and the latest canonical round promoted 0 leads. A limited approval preview from an invite/registration-gated route was cancelled unexecuted, and some worker results were rejected because budget accounting was incomplete. The project also corrected a prior mojibake diagnosis: the file content was valid UTF-8, while the issue came from the Windows PowerShell reading environment. After the adjusted strategy still produced no promotable lead, the relay stopped for human review. No platform write action, proposal, order, payout, or verified revenue occurred.",
       "revenue_effect": "none",
       "lesson": "When repeated bounded searches return zero eligible candidates, pause for strategy review instead of widening loops; environment-level encoding issues should be verified before treating project files as corrupt."
+    },
+    {
+      "date": "2026-06-18",
+      "summary": "The private project ran a further bounded read-only offer-led public-pain search round. The imported shard was valid, but it produced no public assets, no promoted candidates, and no outreach preview. The private relay stayed in human-review state because more unchanged generic public search is unlikely to improve candidate quality. No platform write action, proposal, order, payout, or verified revenue occurred.",
+      "revenue_effect": "none",
+      "lesson": "After repeated zero-promotion public searches, progress depends on a deliberate channel/source decision or an explicit reopening of higher-friction evaluation, not on another broad search loop."
+    },
+    {
+      "date": "2026-06-19",
+      "summary": "A bounded read-only search aggregation first blocked after a shard timed out without findings. The user then chose to allow one more unchanged low-risk round, which completed with one valid shard and retained a small batch of high-level market signals for private index maintenance. This remained read-only: no platform write action, proposal, order, payout, or verified revenue occurred. Pending approvals stayed 0, and the private relay returned to low-risk auto continuation for the next framework step.",
+      "revenue_effect": "none",
+      "lesson": "A human-approved extra search round can restore relay flow after a blocked shard, but retained search signals still need private index maintenance and gate review before they become executable candidates."
     }
   ],
   "current_bottleneck": {
-    "summary": "No verified revenue and no active order. The private project is in first-deal-attempt mode, and the latest bounded read-only executable-entry searches plus strategy review still produced zero current-goal eligible candidates.",
-    "decision_lock": "The private relay state is waiting for human review. Any outreach, quote, message, proposal, file review, remote support, payment handling, strategy-changing action, or private-data work must be approved inside the private project first.",
+    "summary": "No verified revenue and no active order. The private project is in first-deal-attempt mode; the latest read-only round retained high-level market signals but still produced no order, payout, or verified revenue.",
+    "decision_lock": "The private relay is low-risk auto continuation for framework/index maintenance only. Any outreach, quote, message, proposal, file review, remote support, payment handling, strategy-changing action, or private-data work must be approved inside the private project first.",
     "route_boundaries": [
       "Cost-gated marketplaces stay backlog unless the user explicitly reopens their pre-revenue cost gates.",
       "Account-risk routes stay backlog unless the user explicitly reopens them.",
@@ -173,7 +195,7 @@
   },
   "next_safe_plan": [
     "Do not use this public-repo automation to advance acquisition.",
-    "In the private money-goal project only, continue bounded low-risk read-only scanning until a candidate passes the gate or a waiting lead produces a concrete next step.",
+    "In the private money-goal project only, update search asset indexes before any further bootloader work; do not treat retained market signals as executable candidates until they pass the private gate.",
     "Avoid polling loops, countdowns, background waits, broad repeated scans, or generic offer-asset preparation before a concrete buyer demand appears.",
     "Stop at login, CAPTCHA, KYC, SMS/QR, account, payment, payout, tax, cost, proposal, comment, DM, upload, or any other write/action gate.",
     "If payment or payout appears, verify revenue in the private ledger before counting progress.",

@@ -2,7 +2,7 @@
 
 [Chinese progress](PROGRESS.zh-CN.md) | English
 
-Updated: 2026-06-18 09:08 +08:00
+Updated: 2026-06-20 09:00 +08:00
 
 This page is a public, privacy-safe progress snapshot. It is for watching the experiment at a high level, not for reviewing leads, account state, buyer conversations, private platform activity, or operational details.
 
@@ -21,6 +21,9 @@ Only verified net revenue counts. The goal is complete only when the private rev
 
 ## Latest Meaningful Progress
 
+- 2026-06-19: One bounded read-only search aggregation was blocked after a timed-out shard produced no findings. The user then allowed one more unchanged low-risk round, and the follow-up aggregation completed with one valid shard.
+- 2026-06-19: The follow-up round retained a small set of high-level market signals for private index maintenance, but no platform write action, proposal, order, payout, or verified revenue occurred. Pending approvals stayed 0. The next private-task step is search asset index maintenance before any further bootloader work.
+- 2026-06-18: Another bounded read-only offer-led public-pain search round completed with a valid imported shard, but it produced zero public assets, zero promoted candidates, and no outreach preview. More unchanged generic public search was judged unlikely to improve candidate quality without a deliberate channel/source decision or a reopened higher-friction evaluation path.
 - 2026-06-17: The private project ran multiple bounded read-only search aggregations and strategy reviews. The final imported round had valid shards and retained market signals, but it promoted 0 executable candidates.
 - 2026-06-17: A strategy review found the compact public-search corpus still had 0 current-goal eligible candidates. A later encoding review corrected an environment diagnosis: the source content was valid UTF-8, and the bad display came from shell encoding defaults rather than project data corruption.
 - 2026-06-17: The private relay state is now waiting for human review because repeated adjusted read-only search rounds still produced no promotable lead. Pending approvals are 0, verified net revenue remains 0 RMB, broke-zero remains No, and orders remain 0.
@@ -80,9 +83,17 @@ The private project reviewed compact candidate records and ran a read-only fresh
 
 The private project ran several bounded read-only search aggregations plus compact strategy and environment reviews. The search rounds retained more market signals for dedupe and routing, but repeated adjusted searches still produced no promotable lead under the current gate. The strategy review found no current-goal eligible candidate in the compact corpus, while the environment review corrected an earlier encoding diagnosis and confirmed the issue was shell display defaults, not corrupted source content. The private relay state moved to waiting for human review. Pending approvals stayed 0. No platform write action, proposal, order, payout, or verified revenue occurred. Revenue and broke-zero status stayed unchanged.
 
+### 2026-06-18
+
+The private project ran a further bounded read-only offer-led public-pain search round. The imported shard was valid, but it produced no public assets, no promoted candidates, and no outreach preview. The private relay stayed in human-review state because more unchanged generic public search was unlikely to improve candidate quality. No platform write action, proposal, order, payout, or verified revenue occurred. Revenue and broke-zero status stayed unchanged.
+
+### 2026-06-19
+
+A bounded read-only search aggregation first blocked after a shard timed out without findings. The user then chose to allow one more unchanged low-risk round, which completed with one valid shard and retained a small batch of high-level market signals for private index maintenance. This remained read-only: no platform write action, proposal, order, payout, or verified revenue occurred. Pending approvals stayed 0. Revenue and broke-zero status stayed unchanged.
+
 ## Current Bottleneck
 
-There is no active order and no verified revenue. The private project is in first-deal-attempt mode, and repeated adjusted read-only scans have not produced a gate-qualified executable candidate. The current private relay state is waiting for human review before more strategy changes or external actions. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
+There is no active order and no verified revenue. The private project is in first-deal-attempt mode; the latest read-only round retained high-level market signals, but those signals still need private index maintenance and gate review before they can be treated as executable candidates. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
 
 Current route boundaries:
 
@@ -118,7 +129,7 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 ## Next Safe Plan
 
 1. Keep this public-repo automation backup-only; it must not advance acquisition or interact with platforms.
-2. In the private money-goal project only, continue bounded low-risk read-only scanning until a candidate passes the current gate or a waiting lead produces a concrete next step.
+2. In the private money-goal project only, update search asset indexes before any further bootloader work; do not treat retained market signals as executable candidates until they pass the private gate.
 3. Do not prepare generic offer assets before a concrete buyer demand appears.
 4. Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit/credit gates, private data, unsupported source-file requirements, or any write action.
 5. If payment or payout appears, verify evidence in the private ledger before counting progress.
