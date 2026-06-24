@@ -2,7 +2,7 @@
 
 [Chinese progress](PROGRESS.zh-CN.md) | English
 
-Updated: 2026-06-20 09:00 +08:00
+Updated: 2026-06-24 09:00 +08:00
 
 This page is a public, privacy-safe progress snapshot. It is for watching the experiment at a high level, not for reviewing leads, account state, buyer conversations, private platform activity, or operational details.
 
@@ -21,6 +21,8 @@ Only verified net revenue counts. The goal is complete only when the private rev
 
 ## Latest Meaningful Progress
 
+- 2026-06-23: A bounded read-only search aggregation blocked after one valid shard produced no promoted candidate. A compact read-only strategy review then produced recommendations for human decision.
+- 2026-06-23: The user allowed one more unchanged low-risk round, but the follow-up aggregation also blocked and promoted no candidate. No platform write action, proposal, order, payout, pending approval, or verified revenue occurred; the private relay returned to human review.
 - 2026-06-19: One bounded read-only search aggregation was blocked after a timed-out shard produced no findings. The user then allowed one more unchanged low-risk round, and the follow-up aggregation completed with one valid shard.
 - 2026-06-19: The follow-up round retained a small set of high-level market signals for private index maintenance, but no platform write action, proposal, order, payout, or verified revenue occurred. Pending approvals stayed 0. The next private-task step is search asset index maintenance before any further bootloader work.
 - 2026-06-18: Another bounded read-only offer-led public-pain search round completed with a valid imported shard, but it produced zero public assets, zero promoted candidates, and no outreach preview. More unchanged generic public search was judged unlikely to improve candidate quality without a deliberate channel/source decision or a reopened higher-friction evaluation path.
@@ -91,9 +93,13 @@ The private project ran a further bounded read-only offer-led public-pain search
 
 A bounded read-only search aggregation first blocked after a shard timed out without findings. The user then chose to allow one more unchanged low-risk round, which completed with one valid shard and retained a small batch of high-level market signals for private index maintenance. This remained read-only: no platform write action, proposal, order, payout, or verified revenue occurred. Pending approvals stayed 0. Revenue and broke-zero status stayed unchanged.
 
+### 2026-06-23
+
+The private project ran another bounded read-only fresh-search attempt. One aggregation blocked after a valid shard produced no promotable candidate, a compact strategy review produced recommendations for human decision, and the user allowed one more unchanged low-risk round. The follow-up aggregation also blocked with no promoted candidate, so the relay returned to human review. No platform write action, proposal, order, payout, pending approval, or verified revenue occurred. Revenue and broke-zero status stayed unchanged.
+
 ## Current Bottleneck
 
-There is no active order and no verified revenue. The private project is in first-deal-attempt mode; the latest read-only round retained high-level market signals, but those signals still need private index maintenance and gate review before they can be treated as executable candidates. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
+There is no active order and no verified revenue. The private project is in first-deal-attempt mode; the latest read-only attempts blocked or promoted no executable candidate, and the relay is waiting for human review. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
 
 Current route boundaries:
 
@@ -120,6 +126,7 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 - Fresh search is useful for dedupe and market sensing, but unverifiable, already-claimed, stale, answered, identity-gated, payout-gated, amount-missing, scope-unstable, or crowded signals should not be converted into outreach.
 - Failed freshness checks need explicit candidate demotion or status updates; otherwise older eligible records can loop back into review and waste context.
 - When repeated adjusted read-only searches still return 0 promotable candidates, the next useful step is strategy review or human direction, not another unchanged search loop.
+- If a human-approved unchanged extra round also blocks or promotes nothing, treat it as strategy pressure rather than as progress toward an executable candidate.
 - Tool friction should be cached and routed around; repeated failed read-only tool attempts waste context without improving candidate quality.
 - Candidate-source scoring needs hard quality filters before keyword scoring, or stale summaries and crowded/gated observations can look better than they are.
 - Low-frequency follow-up checks should happen only at natural checkpoints; they must not become polling loops.
@@ -129,7 +136,7 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 ## Next Safe Plan
 
 1. Keep this public-repo automation backup-only; it must not advance acquisition or interact with platforms.
-2. In the private money-goal project only, update search asset indexes before any further bootloader work; do not treat retained market signals as executable candidates until they pass the private gate.
+2. In the private money-goal project only, review the blocked search results and decide whether to change source strategy or stop repeating the same search shape.
 3. Do not prepare generic offer assets before a concrete buyer demand appears.
 4. Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit/credit gates, private data, unsupported source-file requirements, or any write action.
 5. If payment or payout appears, verify evidence in the private ledger before counting progress.
