@@ -2,7 +2,7 @@
 
 [Chinese progress](PROGRESS.zh-CN.md) | English
 
-Updated: 2026-06-24 09:00 +08:00
+Updated: 2026-06-25 09:07 +08:00
 
 This page is a public, privacy-safe progress snapshot. It is for watching the experiment at a high level, not for reviewing leads, account state, buyer conversations, private platform activity, or operational details.
 
@@ -21,6 +21,9 @@ Only verified net revenue counts. The goal is complete only when the private rev
 
 ## Latest Meaningful Progress
 
+- 2026-06-24: The private project applied a conservative human-confirmed search-budget reduction, then ran multiple bounded read-only fresh-search and compact strategy-review cycles.
+- 2026-06-24: Several rounds retained only high-level market signals or no promoted candidate. Some worker results were rejected for import/accounting mismatches, and outreach previews stayed unexecuted or were cancelled after policy, route, or access gates failed.
+- 2026-06-24: No platform write action, proposal, order, payout, pending approval, or verified revenue occurred. The latest private state permits only low-risk read-only continuation, with no selected top assets and no active buyer or order.
 - 2026-06-23: A bounded read-only search aggregation blocked after one valid shard produced no promoted candidate. A compact read-only strategy review then produced recommendations for human decision.
 - 2026-06-23: The user allowed one more unchanged low-risk round, but the follow-up aggregation also blocked and promoted no candidate. No platform write action, proposal, order, payout, pending approval, or verified revenue occurred; the private relay returned to human review.
 - 2026-06-19: One bounded read-only search aggregation was blocked after a timed-out shard produced no findings. The user then allowed one more unchanged low-risk round, and the follow-up aggregation completed with one valid shard.
@@ -34,10 +37,6 @@ Only verified net revenue counts. The goal is complete only when the private rev
 - 2026-06-15: The private project reviewed existing compact candidate assets, prepared but did not execute outreach previews, then cancelled the pending approvals after human pass decisions and a gate repair. No external write, proposal, order, payout, or verified revenue occurred.
 - 2026-06-12: The private project repaired candidate-source maintenance, read-only tool preflight, search filtering, candidate-quality filtering, and relay snapshot consistency metadata so future scans can avoid repeated failed tool attempts, stale source false positives, and ambiguous relay state.
 - 2026-06-12: Low-risk read-only scans and framework-only repairs found no gate-qualified candidate to promote. Observed route classes were deferred because they involved competition, login/comment/private-message gates, missing fixed payment terms, stale or crowded signals, specialized scope uncertainty, or private-file/config/log boundaries.
-- 2026-06-11: The private project moved into first-deal-attempt mode and handled one waiting side line behind scope, privacy, and payment gates. No Codex external write, quote, order, payout, or verified revenue occurred.
-- 2026-06-11: Multiple read-only scans and human reviews tightened the gate: routes now need usable safe contact, practical narrow intervention, explicit payment/fixed cash signal, and no registration, invite, cost, CAPTCHA, social-write, private-data, or remote-support blocker before promotion.
-- 2026-06-10: The candidate gate was tightened: paid-bid marketplaces, registration-cost paths, KYC/payout-setup-first paths, free-sample-heavy paths, and out-of-pocket routes are deferred by default unless the user explicitly reopens them.
-- 2026-06-10: The public snapshot was privacy-redacted. Specific platform user IDs, buyer/lead identifiers, account metrics, direct marketplace project IDs, local absolute paths, and message/inbox details are no longer included in the public files.
 
 ## Compressed Timeline
 
@@ -97,9 +96,13 @@ A bounded read-only search aggregation first blocked after a shard timed out wit
 
 The private project ran another bounded read-only fresh-search attempt. One aggregation blocked after a valid shard produced no promotable candidate, a compact strategy review produced recommendations for human decision, and the user allowed one more unchanged low-risk round. The follow-up aggregation also blocked with no promoted candidate, so the relay returned to human review. No platform write action, proposal, order, payout, pending approval, or verified revenue occurred. Revenue and broke-zero status stayed unchanged.
 
+### 2026-06-24
+
+The private project applied a conservative human-confirmed search-budget reduction, then ran several bounded read-only fresh-search and compact strategy-review cycles. The work retained only high-level market signals or produced no promoted candidate; some worker results were rejected for import/accounting mismatches, and outreach previews stayed unexecuted or were cancelled after policy, route, or access gates failed. No platform write action, proposal, order, payout, pending approval, or verified revenue occurred. The latest private state permits only low-risk read-only continuation, with no selected top assets and no active buyer or order. Revenue and broke-zero status stayed unchanged.
+
 ## Current Bottleneck
 
-There is no active order and no verified revenue. The private project is in first-deal-attempt mode; the latest read-only attempts blocked or promoted no executable candidate, and the relay is waiting for human review. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
+There is no active order and no verified revenue. The private project is in first-deal-attempt mode; the latest read-only attempts retained only market-sensing signals and selected no executable top assets. The relay currently permits only low-risk read-only continuation. Any outreach, quote, file review, remote support, payment discussion, or proposal still requires a separate private-project approval gate.
 
 Current route boundaries:
 
@@ -127,6 +130,7 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 - Failed freshness checks need explicit candidate demotion or status updates; otherwise older eligible records can loop back into review and waste context.
 - When repeated adjusted read-only searches still return 0 promotable candidates, the next useful step is strategy review or human direction, not another unchanged search loop.
 - If a human-approved unchanged extra round also blocks or promotes nothing, treat it as strategy pressure rather than as progress toward an executable candidate.
+- Budget-reduced repeated search can preserve safety, but import friction, inaccessible public threads, and amount/contact uncertainty are routing evidence, not first-deal progress.
 - Tool friction should be cached and routed around; repeated failed read-only tool attempts waste context without improving candidate quality.
 - Candidate-source scoring needs hard quality filters before keyword scoring, or stale summaries and crowded/gated observations can look better than they are.
 - Low-frequency follow-up checks should happen only at natural checkpoints; they must not become polling loops.
@@ -136,7 +140,7 @@ Humans do not need to approve normal strategy or everyday next steps on this pag
 ## Next Safe Plan
 
 1. Keep this public-repo automation backup-only; it must not advance acquisition or interact with platforms.
-2. In the private money-goal project only, review the blocked search results and decide whether to change source strategy or stop repeating the same search shape.
+2. In the private money-goal project only, review the latest private gate-review material and framework import issues before any further action.
 3. Do not prepare generic offer assets before a concrete buyer demand appears.
 4. Stop for login, CAPTCHA, ID/KYC, phone/SMS, payment, tax, profile/contact setup, membership/deposit/credit gates, private data, unsupported source-file requirements, or any write action.
 5. If payment or payout appears, verify evidence in the private ledger before counting progress.
